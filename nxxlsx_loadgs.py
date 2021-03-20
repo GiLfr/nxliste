@@ -22,7 +22,7 @@ def main():
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                'credentials.json', SCOPES) # here enter the name of your credentials JSON file
+                'local/credentials.json', SCOPES) # here enter the name of your credentials JSON file
             creds = flow.run_local_server(port=0)
         with open('token.pickle', 'wb') as token:
             pickle.dump(creds, token)
