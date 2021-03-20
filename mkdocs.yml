@@ -1,0 +1,86 @@
+# Information du site
+site_name: "GiL - Mes listes Netflix"
+site_description: "Mes listes de Séries et de Films sur Netflix"
+site_author: "Gilles LANTERI"
+site_url: "https://gilfr.github.io/docs/"
+
+# Dépôt de code source
+# repo_name: "github"
+# repo_url: "https://github.com/gilfr/nxliste/"
+# edit_uri: "src/develop/docs/"
+
+# Copyright
+copyright: "Copyright &copy; 2021 Gilles Lantéri"
+
+# Configuration
+theme:
+  name: "material"
+  palette:
+    primary: purple
+    accent: purple
+  # language: "fr"
+  # dark: "true"
+  # # favicon: "images/favicon/logo.svg"
+  # # logo: "images/logo-white.svg"
+  # logo:
+  #   icon: "apps"
+  # palette:
+  #   primary: "deep orange"
+  #   accent: "indigo"
+
+# # Personnalisation
+# extra:
+#   search:
+#     language: "en"
+#   social:
+#     - type: "github"
+#       link: "https://github.com/gilfr"
+
+# Google Analytics
+# google_analytics:
+#   - "UA-XXXXXXXX-X"
+#   - "auto"
+
+# # Plugins
+# plugins:
+#   - search:
+#       # separator: '[\s\-\.]+'
+#       prebuild_index: true
+#   # - git-revision-date
+#   # - markdownmermaid
+
+# Fichiers techniques
+# extra_css:
+#   - "stylesheets/extra.css"
+# extra_javascript:
+#   - "javascripts/flowchart.js"
+#   # - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
+
+# # Extensions
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - attr_list
+#   - admonition
+#   - codehilite:
+#       guess_lang: false
+#   - footnotes
+#   - meta
+#   - pymdownx.betterem:
+#       smart_enable: all
+#   - pymdownx.caret
+#   - pymdownx.critic
+#   - pymdownx.details
+#   # - pymdownx.emoji.emojione # Payant
+#   - pymdownx.inlinehilite
+#   - pymdownx.magiclink
+#   - pymdownx.mark
+#   - pymdownx.progressbar
+#   - pymdownx.smartsymbols
+#   - pymdownx.superfences
+#   - pymdownx.tasklist:
+#       custom_checkbox: true
+#   - pymdownx.tilde
+#   - toc:
+#       permalink: true
