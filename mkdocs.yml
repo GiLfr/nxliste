@@ -15,6 +15,9 @@ copyright: "Copyright &copy; 2021 Gilles Lantéri"
 # Configuration
 theme:
   name: "material"
+  palette:
+    primary: purple
+    accent: purple
   # language: "fr"
   # dark: "true"
   # # favicon: "images/favicon/logo.svg"
@@ -54,9 +57,12 @@ theme:
 #   # - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
 
 # # Extensions
-# markdown_extensions:
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - attr_list
 #   - admonition
-#   - attr_list
 #   - codehilite:
 #       guess_lang: false
 #   - footnotes
