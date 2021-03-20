@@ -10,3 +10,4 @@ Netflix_fichiers/
 site/
 local/
 histo/
+.~lock*
