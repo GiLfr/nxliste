@@ -1,0 +1,116 @@
+.markdown-body .progress-label {
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    margin: 0;
+    line-height: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+    height: 1.2rem;
+    float: left;
+    background-color: #2979ff;
+}
+
+.progress {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    height: 1.2rem;
+    background-color: #eeeeee;
+    position: relative;
+}
+
+.progress-bar {
+    text-align: center;
+}
+
+.progress.thin {
+    margin-top: 0.9rem;
+    height: 0.4rem;
+}
+
+.progress.thin .progress-label {
+    margin-top: -0.4rem;
+}
+
+.progress.thin .progress-bar {
+    height: 0.4rem;
+}
+
+.progress-100plus .progress-bar {
+    background-color: #00e676;
+}
+
+.progress-80plus .progress-bar {
+    background-color: #fbc02d;
+}
+
+.progress-60plus .progress-bar {
+    background-color: #ff9100;
+}
+
+.progress-40plus .progress-bar {
+    background-color: #ff5252;
+}
+
+.progress-20plus .progress-bar {
+    background-color: #ff1744;
+}
+
+.progress-0plus .progress-bar {
+    background-color: #f50057;
+}
+
+.markdown-body .task-list-item {
+    list-style-type: none !important;
+}
+
+.markdown-body .task-list-item input[type="checkbox"] {
+    margin: 0 4px 0.25em -20px;
+    vertical-align: middle;
+}
+
+.markdown-body .task-list-control {
+    display: inline;
+    /* Ensure label is inline incase theme sets it to block.*/
+}
+
+.markdown-body .task-list-control {
+    position: relative;
+    display: inline-block;
+    color: #555;
+    cursor: pointer;
+}
+
+.markdown-body .task-list-control input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    /* Put the input behind the label so it doesn't overlay text */
+}
+
+.markdown-body .task-list-indicator {
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    color: #eee;
+    background-color: #eee;
+    border-radius: .25rem;
+}
+
+.markdown-body .task-list-control input[type="checkbox"]:checked+.task-list-indicator::before {
+    display: block;
+    margin-top: -4px;
+    margin-left: 2px;
+    font-size: 16px;
+    line-height: 1;
+    content: "✔";
+    color: #1EBB52;
+}

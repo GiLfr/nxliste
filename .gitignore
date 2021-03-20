@@ -1,0 +1,12 @@
+.git/
+.venv/
+**/*.xlsx
+Netflix.html
+Netflix_files/
+Netflix_fichiers/
+*.pdf
+*.txt
+!requirements.txt
+site/
+local/
+histo/
