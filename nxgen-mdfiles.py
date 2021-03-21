@@ -17,7 +17,7 @@ dicoNotes={
     '5':   ':material-star:{.gold }:material-star:{.gold }:material-star:{.gold }:material-star:{.gold }:material-star:{.gold .heart}'
 }
 
-header="Titre|Note|Sortie|Nb Episodes\n:---|:---:|:---:|:---:\n"
+header="Titre|Note|Sortie|Nb Episodes\n:---:|:---:|:---:|:---:\n"
 mdKS="title: K-Séries\n\n#Séries Coréennes\n\n"+header
 mdKF="title: K-Films\n\n#Films Coréens\n\n"+header
 
@@ -27,16 +27,16 @@ df = dfx.set_index("Titre", drop=False)
 for index, row in df.iterrows():
     if row['Note'] in dicoNotes:
         if row['Origine'] =="Corée du Sud":
-            md=str(row['Titre'])+'|['+ str(round(float(row['Note'].replace(',','.')),1))+'](){.petit } '+ dicoNotes[str(row['Note'])] +'|'+str(int(row['Sortie']))+'|'+str(int(row['Episodes']))+'\n'
+            md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+'){width: 100px}|['+ str(round(float(row['Note'].replace(',','.')),1))+'](){.petit } '+ dicoNotes[str(row['Note'])] +'|'+str(int(row['Sortie']))+'|'+str(int(row['Episodes']))+'\n'
             if row["Type"] == "Série":
                 mdKS += md
             elif  row["Type"] == "Film":
                 mdKF += md
 
-with open("docs/fr/index.md", "w", encoding='utf-8') as f: 
+with open("docs/index.md", "w", encoding='utf-8') as f: 
     f.write(mdKS) 
 
-with open("docs/fr/kfilm.md", "w", encoding='utf-8') as f: 
+with open("docs/kfilm.md", "w", encoding='utf-8') as f: 
     f.write(mdKF) 
 
 # with open("docs/kr/index.md", "w", encoding='utf-8') as f: 
