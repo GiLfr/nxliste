@@ -140,3 +140,8 @@
 table thead {
     background-color: violet; 
 }
+
+#image {  
+    max-width: 50%;  
+    height: auto;  
+} 
