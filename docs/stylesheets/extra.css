@@ -130,3 +130,18 @@
 .gold {
     color: gold;
 }
+.grey {
+    color: lightgrey;
+}
+.petit {
+    font-size: xx-small;
+}
+
+table thead {
+    background-color: violet; 
+}
+
+#image {  
+    max-width: 50%;  
+    height: auto;  
+} 

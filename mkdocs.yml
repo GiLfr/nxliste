@@ -10,28 +10,44 @@ site_url: "https://gilfr.github.io/docs/"
 # edit_uri: "src/develop/docs/"
 
 # Copyright
-copyright: "Copyright &copy; 2021 Gilles Lantéri"
+copyright: "Copyright &copy; 2020-2021 Gilles Lantéri"
 
 # Configuration
 theme:
   name: "material"
   palette:
-    primary: purple
+    primary: deep purple
     accent: purple
-  # language: "fr"
+  icon:
+    logo: material/movie-open-check
+  features:
+    # - navigation.indexes
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - toc.integrate
+  language: fr
   # dark: "true"
   # # favicon: "images/favicon/logo.svg"
   # # logo: "images/logo-white.svg"
   # logo:
-  #   icon: "apps"
+  #   icon: "movie-open-check"
   # palette:
   #   primary: "deep orange"
   #   accent: "indigo"
 
 # # Personnalisation
 # extra:
-#   search:
-#     language: "en"
+    # alternate:
+    #   - name: Français
+    #     link: /fr/
+    #     lang: fr
+    #   - name: 한국어
+    #     link: /kr/
+    #     lang: kr
+    # search:
+    #   language: "en"
 #   social:
 #     - type: "github"
 #       link: "https://github.com/gilfr"
@@ -50,11 +66,13 @@ theme:
 #   # - markdownmermaid
 
 # Fichiers techniques
-# extra_css:
-#   - "stylesheets/extra.css"
-# extra_javascript:
-#   - "javascripts/flowchart.js"
-#   # - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tables.js
+  #   - "javascripts/flowchart.js"
+  #   - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
 
 # # Extensions
 markdown_extensions:
@@ -62,7 +80,7 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - attr_list
-#   - admonition
+  - admonition
 #   - codehilite:
 #       guess_lang: false
 #   - footnotes
