@@ -130,3 +130,13 @@
 .gold {
     color: gold;
 }
+.grey {
+    color: lightgrey;
+}
+.petit {
+    font-size: xx-small;
+}
+
+table thead {
+    background-color: violet; 
+}
