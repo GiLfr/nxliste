@@ -39,8 +39,8 @@ with open("docs/fr/index.md", "w", encoding='utf-8') as f:
 with open("docs/fr/kfilm.md", "w", encoding='utf-8') as f: 
     f.write(mdKF) 
 
-with open("docs/kr/index.md", "w", encoding='utf-8') as f: 
-    f.write(mdKS) 
+# with open("docs/kr/index.md", "w", encoding='utf-8') as f: 
+#     f.write(mdKS) 
 
-with open("docs/kr/kfilm.md", "w", encoding='utf-8') as f: 
-    f.write(mdKF) 
+# with open("docs/kr/kfilm.md", "w", encoding='utf-8') as f: 
+#     f.write(mdKF) 
