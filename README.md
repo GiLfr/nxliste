@@ -25,7 +25,7 @@ _Ajout manuel dans Google Spreadsheet **maListeNetflix** du delta_
 
 # Git new version (release)
 
-export current=`git tag --list --sort -tag | head -n 1` <!-- Varaible avec version courante -->
-??? <!-- Incrémentation version corrective -->
+run.sh <!-- en CONSTRUCTION -->
 git flow release start 0.2.3 develop  <!-- Création release -->
 git flow release finish 0.2.3         <!-- Création version +1 -->
+manque l'action de push vers orign !!! (option du release finish?) - à voir avec une exe sourcetree
