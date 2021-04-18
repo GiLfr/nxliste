@@ -21,3 +21,11 @@ _Ajout manuel dans Google Spreadsheet **maListeNetflix** du delta_
 - ajout info page généré (statistiques nb épisodes, nb film, nb heures = 1 x nb ep + 2 x nb film)
 - ajout pages hors K-xxxx
 - ajout info plateform source (Netflix, Amazon prime, ...)
+
+
+# Git new version (release)
+
+run.sh <!-- en CONSTRUCTION -->
+git flow release start 0.2.3 develop  <!-- Création release -->
+git flow release finish 0.2.3         <!-- Création version +1 -->
+manque l'action de push vers orign !!! (option du release finish?) - à voir avec une exe sourcetree

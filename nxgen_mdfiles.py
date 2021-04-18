@@ -17,9 +17,10 @@ dicoNotes={
     '5':   ':material-star:{.gold }:material-star:{.gold }:material-star:{.gold }:material-star:{.gold }:material-star:{.gold .heart}'
 }
 
-header="Titre|Note|Sortie|Nb Episodes\n:---:|:---:|:---:|:---:\n"
-mdKS="title: K-Séries\n\n#Séries Coréennes\n\n"+header
-mdKF="title: K-Films\n\n#Films Coréens\n\n"+header
+headerS="Titre|Note|Sortie|Nb Episodes\n:---:|:---:|:---:|:---:\n"
+headerF="Titre|Note|Sortie\n:---:|:---:|:---:\n"
+mdKS="title: K-Séries\n\n#Séries Coréennes\n\n"+headerS
+mdKF="title: K-Films\n\n#Films Coréens\n\n"+headerF
 
 dfx = pd.read_excel('maListeNetflix.xlsx', index_col=None, sheet_name='Liste', usecols='A:K')
 dfx.sort_values(by=['Note', 'Titre'], ascending=[False, True], inplace=True)
@@ -27,11 +28,12 @@ df = dfx.set_index("Titre", drop=False)
 for index, row in df.iterrows():
     if row['Note'] in dicoNotes:
         if row['Origine'] =="Corée du Sud":
-            md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|['+ str(round(float(row['Note'].replace(',','.')),1))+'](){.petit } '+ dicoNotes[str(row['Note'])] +'|'+str(int(row['Sortie']))+'|'+str(int(row['Episodes']))+'\n'
             # md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+'){ #image}|['+ str(round(float(row['Note'].replace(',','.')),1))+'](){.petit } '+ dicoNotes[str(row['Note'])] +'|'+str(int(row['Sortie']))+'|'+str(int(row['Episodes']))+'\n'
             if row["Type"] == "Série":
+                md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|['+ str(round(float(row['Note'].replace(',','.')),1))+'](){.petit } '+ dicoNotes[str(row['Note'])] +'|'+str(int(row['Sortie']))+'|'+str(int(row['Episodes']))+'\n'
                 mdKS += md
             elif  row["Type"] == "Film":
+                md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|['+ str(round(float(row['Note'].replace(',','.')),1))+'](){.petit } '+ dicoNotes[str(row['Note'])] +'|'+str(int(row['Sortie']))+'\n'
                 mdKF += md
 
 with open("docs/index.md", "w", encoding='utf-8') as f: 
