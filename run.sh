@@ -5,6 +5,12 @@ export next=`increment_version $current`
 
 echo "$current --> $next"
 
+# Positionnement en development
+git branch development
+
+# Commit changes
+git commit . -m "nouvelle version"
+
 # Création d'une version
 git flow release start $next develop
 
