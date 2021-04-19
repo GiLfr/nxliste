@@ -11,7 +11,7 @@ git branch development
 # Commit changes
 git status
 git add .
-git commit -m "nvl version"
+git commit -m 'nvl version'
 
 # Création d'une version
 # git flow release start $next develop
