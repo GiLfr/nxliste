@@ -9,10 +9,12 @@ echo "$current --> $next"
 git branch development
 
 # Commit changes
-git commit . -m "nouvelle version"
+git status
+git add .
+git commit -m "nvl version"
 
 # Création d'une version
-git flow release start $next develop
+# git flow release start $next develop
 
 # Finalisation de la version
-git flow release finish $next
+# git flow release finish $next
