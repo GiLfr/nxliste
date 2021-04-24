@@ -6,7 +6,7 @@ export next=`increment_version $current`
 echo "$current --> $next"
 
 # Positionnement en development
-git branch develop
+git checkout develop
 
 # Commit si changement
 if [ -n "$(git status --porcelain)" ]; then
