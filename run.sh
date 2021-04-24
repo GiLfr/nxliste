@@ -8,22 +8,20 @@ echo "$current --> $next"
 # Positionnement en development
 git branch develop
 
+# Commit si changement
 if [ -n "$(git status --porcelain)" ]; then
-  echo "there are changes";
+    echo "Commit des changements ...";
+    git add .
+    git commit -m "Release $next"
+    git push origin develop
 else
-  echo "no changes";
+    echo "Pas de changement";
 fi
 
-# Commit changes
-git status
-git add .
-git commit -m 'nvl version'
-git push origin develop
-
 # Création d'une version
-# git flow release start $next develop
+git flow release start $next develop
 
 # Finalisation de la version
-# git flow release finish $next
-# git push origin master
-# git push origin develop
+git flow release finish $next
+git push origin master
+git push origin develop
