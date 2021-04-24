@@ -23,10 +23,10 @@ headerEC="Titre|Note|Sortie|Nb Episodes\n:---:|:---:|:---:|:---:\n"
 headerKF="Titre|Note|Sortie\n:---:|:---:|:---:\n"
 headerAF="Titre|Note|Sortie\n:---:|:---:|:---:\n"
 mdKS="title: K-Séries\n\n#Séries Coréennes\n\n"+headerKS
-mdAS="title: K-Séries\n\n#Autres séries\n\n"+headerAS
-mdEC="title: K-Séries\n\n#Séries en cours\n\n"+headerEC
+mdAS="title: Autres Séries\n\n#Autres séries (non Coréennes)\n\n"+headerAS
+mdEC="title: Séries en cours\n\n#Séries en cours\n\n"+headerEC
 mdKF="title: K-Films\n\n#Films Coréens\n\n"+headerKF
-mdAF="title: K-Films\n\n#Autres Films\n\n"+headerAF
+mdAF="title: Autres Films\n\n#Autres Films (non Coréens)\n\n"+headerAF
 
 dfx = pd.read_excel('maListeNetflix.xlsx', index_col=None, sheet_name='Liste', usecols='A:K')
 dfx.sort_values(by=['Note', 'Titre'], ascending=[False, True], inplace=True)
@@ -60,8 +60,8 @@ with open("docs/aserie.md", "w", encoding='utf-8') as f:
 with open("docs/kfilm.md", "w", encoding='utf-8') as f: 
     f.write(mdKF) 
 
-with open("docs/afilm.md", "w", encoding='utf-8') as f: 
-    f.write(mdAF) 
+# with open("docs/afilm.md", "w", encoding='utf-8') as f: 
+#     f.write(mdAF) 
 
 with open("docs/ecserie.md", "w", encoding='utf-8') as f: 
     f.write(mdEC) 

@@ -1,6 +1,6 @@
-title: K-Séries
+title: Autres Séries
 
-#Autres séries
+#Autres séries (non Coréennes)
 
 Titre|Note|Sortie|Nb Episodes
 :---:|:---:|:---:|:---:
