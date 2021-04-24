@@ -5,8 +5,23 @@ export next=`increment_version $current`
 
 echo "$current --> $next"
 
+# Positionnement en development
+git branch develop
+
+# Commit si changement
+if [ -n "$(git status --porcelain)" ]; then
+    echo "Commit des changements ...";
+    git add .
+    git commit -m "Release $next"
+    git push origin develop
+else
+    echo "Pas de changement";
+fi
+
 # Création d'une version
 git flow release start $next develop
 
 # Finalisation de la version
 git flow release finish $next
+git push origin master
+git push origin develop
