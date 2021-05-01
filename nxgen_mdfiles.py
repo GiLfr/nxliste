@@ -19,7 +19,7 @@ dicoNotes={
 
 headerKS="Titre|Note|Sortie|Nb Episodes\n:---:|:---:|:---:|:---:\n"
 headerAS="Titre|Note|Sortie|Nb Episodes\n:---:|:---:|:---:|:---:\n"
-headerEC="Titre|Note|Sortie|Nb Episodes\n:---:|:---:|:---:|:---:\n"
+headerEC="Titre|Etat|Sortie|Nb Episodes\n:---:|:---:|:---:|:---:\n"
 headerKF="Titre|Note|Sortie\n:---:|:---:|:---:\n"
 headerAF="Titre|Note|Sortie\n:---:|:---:|:---:\n"
 mdKS="title: K-Séries\n\n#Séries Coréennes\n\n"+headerKS
