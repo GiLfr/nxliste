@@ -33,7 +33,7 @@ coloredlogs.install(level='DEBUG')
 # html = open('maListeNetflix.html','r')
 # html = open('test.html','r')
 
-dfi = pd.read_excel('maListeNetflix.xlsx', index_col=None, sheet_name='Liste', usecols='A:K')
+dfi = pd.read_excel('maListeNetflix.xlsx', index_col=None, sheet_name='Liste', usecols='A:L')
 # dfi = pd.read_excel('maListeNetflix.xlsx', index_col=None, sheet_name='Liste', usecols = "B,C")
 
 html = open('Netflix.html','r', encoding="utf8")
@@ -54,13 +54,14 @@ dfn['Vignette'] = pd.DataFrame(vign)
 # print(dfn)
 
 dfd = dfi.merge(dfn, on='Titre', how = 'outer' ,indicator=True).loc[lambda x : x['_merge']=='right_only']
-dfr = dfd.drop(columns=['Unnamed: 0', 'Vignette_x', 'Type', 'Origine', 'Sortie', 'Saison', 'Episodes', 'Note', 'Deadline', 'F-Commentaire', '_merge'])
+dfr = dfd.drop(columns=['Unnamed: 0', 'Vignette_x', 'Type', 'Origine', 'Sortie', 'Saison', 'Episodes', 'Note', 'FinVisionnage','Deadline', 'F-Commentaire', '_merge'])
 dfr["Type"]="Série"
 dfr["Origine"]="Corée du Sud"
 dfr["Sortie"]="2021"
 dfr["Saison"]="1"
 dfr["Episodes"]="16"
 dfr["Note"]="à voir..."
+dfr["FinVisionnage"]=""
 dfr["Deadline"]=""
 dfr["F-Commentaire"]="!CONTROL INFOS!"
 # print(dfr)
