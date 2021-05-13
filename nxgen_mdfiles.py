@@ -36,19 +36,24 @@ dicoNotes={
 # mdKF="title: K-Films\n\n#Films Coréens\n\n"+headerKF
 # mdAF="title: Autres Films\n\n#Autres Films (non Coréens)\n\n"+headerAF
 
-header="Titre|Information\n:---:|:---\n"
+header="Affiche|Information\n:---:|:---\n"
+header2="Classement|Affiche|Information\n:---:|:---:|:---\n"
 mdIndex="title: Accueil\n\n#Accueil\n\n"
-mdLast="##Derniers vus... \n\n"+header
+mdLast="##Derniers vus\n\n"+header
 mdEC="\n\n##En cours...\n\n"+header
+md10="\n\n##Top 10\n\n"+header2
 mdS="title: Séries\n\n#Les Séries \n\n"+header
 mdF="title: Films\n\n#Les Films \n\n"+header
 
-dfx = pd.read_excel('maListeNetflix.xlsx', index_col=None, sheet_name='Liste', usecols='A:N')
+dfx = pd.read_excel('maListeNetflix.xlsx', index_col=None, sheet_name='Liste', usecols='A:P')
 dfx.sort_values(by=['Note', 'Titre'], ascending=[False, True], inplace=True)
 df = dfx.set_index("Titre", drop=False)
 for index, row in df.iterrows():
+    titrex2 = str(row['F-Titre'])
+    if str(row['K-Titre']) != "" :
+        titrex2 += ' / ' + str(row['K-Titre'])
     if row['Note'] in dicoNotes:
-        md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|Titre: **'+ str(row['Titre']) +'**<br/>Origine: **'+ str(row['Origine']) + '**<br/>Note: ' + dicoNotes[str(row['Note'])] +'<br/> Sortie en **'+str(int(row['Sortie']))+'**<br/>Nb. épisodes: **'+str(int(row['Episodes']))+'**<br/><br/>_'+str(row['F-Commentaire'])+'_\n'
+        md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|Titre: **'+ titrex2 +'**<br/>Origine: **'+ str(row['Origine']) + '**<br/>Note: ' + dicoNotes[str(row['Note'])] +'<br/> Sortie en **'+str(int(row['Sortie']))+'**<br/>Nb. épisodes: **'+str(int(row['Episodes']))+'**<br/><br/>_'+str(row['F-Commentaire'])+'_\n'
         if row["Type"] == "Série":
             mdS += md
             # if row['Origine'] =="Corée du Sud":
@@ -76,6 +81,13 @@ for index, row in df.head(5).iterrows():
     md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|Titre: **'+ str(row['Titre']) +'**<br/>Origine: **'+ str(row['Origine']) + '**<br/>Note: ' + dicoNotes[str(row['Note'])] +'<br/> Sortie en **'+str(int(row['Sortie']))+'**<br/>Nb. épisodes: **'+str(int(row['Episodes']))+'**<br/><br/>_'+str(row['F-Commentaire'])+'_\n'
     mdLast += md
 
+dfx.sort_values(by=['TOP10'], ascending=[True], inplace=True)
+df = dfx.set_index("Titre", drop=False)
+for index, row in df.head(10).iterrows():
+    # md=':numeric-'+ str(int(row['TOP10'])) +'-circle:{.silver}' +' | ![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|Titre: **'+ str(row['Titre']) +'**<br/>Origine: **'+ str(row['Origine']) + '**<br/>Note: ' + dicoNotes[str(row['Note'])] +'<br/> Sortie en **'+str(int(row['Sortie']))+'**<br/>Nb. épisodes: **'+str(int(row['Episodes']))+'**<br/><br/>_'+str(row['F-Commentaire'])+'_\n'
+    md=str(int(row['TOP10'])) +' | ![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|Titre: **'+ str(row['Titre']) +'**<br/>Origine: **'+ str(row['Origine']) + '**<br/>Note: ' + dicoNotes[str(row['Note'])] +'<br/> Sortie en **'+str(int(row['Sortie']))+'**<br/>Nb. épisodes: **'+str(int(row['Episodes']))+'**<br/><br/>_'+str(row['F-Commentaire'])+'_\n'
+    md10 += md
+
 # with open("docs/kserie.md", "w", encoding='utf-8') as f: 
 #     f.write(mdKS) 
 
@@ -94,7 +106,7 @@ for index, row in df.head(5).iterrows():
 # with open("docs/kr/kfilm.md", "w", encoding='utf-8') as f: 
 #     f.write(mdKF) 
 
-mdIndex = mdIndex + mdLast + '\n\n' + mdEC
+mdIndex = mdIndex + mdLast + '\n\n' + mdEC  + '\n\n' + md10
 with open("docs/index.md", "w", encoding='utf-8') as f: 
     f.write(mdIndex)
 

@@ -130,8 +130,14 @@
 .gold {
     color: gold;
 }
+.silver {
+    color: silver;
+}
 .grey {
     color: lightgrey;
+}
+.grand {
+    font-size: large;
 }
 .petit {
     font-size: xx-small;
