@@ -25,3 +25,4 @@ git flow release start $next develop
 git flow release finish $next
 git push origin master
 git push origin develop
+git checkout develop
