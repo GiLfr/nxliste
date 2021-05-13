@@ -9,7 +9,7 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 # here enter the id of your google sheet
 SPREADSHEET_ID_input='1TwcW3o3zUz2uYpG2on1-LSZCSb3P7UDtZZV4XuzsVuk'
-RANGE_NAME = 'A:K'
+RANGE_NAME = 'A:P'
 
 def main():
     global values_input, service
