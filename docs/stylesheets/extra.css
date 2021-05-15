@@ -130,8 +130,17 @@
 .gold {
     color: gold;
 }
-.silver {
+.num_gold {
+    font-size: 28px;
+    color: gold;
+}
+.num_silver {
+    font-size: 24px;
     color: silver;
+}
+.num_copper {
+    font-size: 20px;
+    color: #B87333;
 }
 .grey {
     color: lightgrey;

@@ -71,21 +71,34 @@ for index, row in df.iterrows():
             #     md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|['+ str(round(float(row['Note'].replace(',','.')),1))+'](){.petit } '+ dicoNotes[str(row['Note'])] +'|'+str(int(row['Sortie']))+'\n'
             #     mdAF += md
     if row['Note'].lower().strip()[0:8] == "en cours":
-        md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|Titre: **'+ str(row['Titre']) +'**<br/>Origine: **'+ str(row['Origine']) + '**<br/>Sortie en **'+str(int(row['Sortie']))+'**<br/>Nb. épisodes: **'+str(int(row['Episodes']))+'**<br/><br/>_'+ str(row['F-Commentaire']).strip()+'_\n'
+        md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|Titre: **'+ titrex2 +'**<br/>Origine: **'+ str(row['Origine']) + '**<br/>Sortie en **'+str(int(row['Sortie']))+'**<br/>Nb. épisodes: **'+str(int(row['Episodes']))+'**<br/><br/>_'+ str(row['F-Commentaire']).strip()+'_\n'
         # md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|' + "en cours" +'|'+str(int(row['Sortie']))+'|'+str(int(row['Episodes']))+'\n'
         mdEC += md
 
 dfx.sort_values(by=['FinVisionnage'], ascending=[False], inplace=True)
 df = dfx.set_index("Titre", drop=False)
 for index, row in df.head(5).iterrows():
-    md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|Titre: **'+ str(row['Titre']) +'**<br/>Origine: **'+ str(row['Origine']) + '**<br/>Note: ' + dicoNotes[str(row['Note'])] +'<br/> Sortie en **'+str(int(row['Sortie']))+'**<br/>Nb. épisodes: **'+str(int(row['Episodes']))+'**<br/><br/>_'+str(row['F-Commentaire']).strip()+'_\n'
+    titrex2 = str(row['F-Titre'])
+    if str(row['K-Titre']) != "nan" :
+        titrex2 += ' / ' + str(row['K-Titre'])
+    md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|Titre: **'+ titrex2 +'**<br/>Origine: **'+ str(row['Origine']) + '**<br/>Note: ' + dicoNotes[str(row['Note'])] +'<br/> Sortie en **'+str(int(row['Sortie']))+'**<br/>Nb. épisodes: **'+str(int(row['Episodes']))+'**<br/><br/>_'+str(row['F-Commentaire']).strip()+'_\n'
     mdLast += md
 
 dfx.sort_values(by=['TOP10'], ascending=[True], inplace=True)
 df = dfx.set_index("Titre", drop=False)
 for index, row in df.head(10).iterrows():
-    # md=':numeric-'+ str(int(row['TOP10'])) +'-circle:{.silver}<br/>![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|Titre: **'+ str(row['Titre']) +'**<br/>Origine: **'+ str(row['Origine']) + '**<br/>Note: ' + dicoNotes[str(row['Note'])] +'<br/> Sortie en **'+str(int(row['Sortie']))+'**<br/>Nb. épisodes: **'+str(int(row['Episodes']))+'**<br/><br/>_'+str(row['F-Commentaire'])+'_\n'
-    md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|Palmarès: **'+str(int(row['TOP10']))+'**<br/>Titre: **'+ str(row['Titre']) +'**<br/>Origine: **'+ str(row['Origine']) + '**<br/>Note: ' + dicoNotes[str(row['Note'])] +'<br/> Sortie en **'+str(int(row['Sortie']))+'**<br/>Nb. épisodes: **'+str(int(row['Episodes']))+'**<br/><br/>_'+str(row['F-Commentaire']).strip()+'_\n'
+    titrex2 = str(row['F-Titre'])
+    if str(row['K-Titre']) != "nan" :
+        titrex2 += ' / ' + str(row['K-Titre'])
+    topicone=':material-numeric-'+ str(int(row['TOP10'])) +'-circle:'
+    if int(row['TOP10']) == 1:
+        topicone+='{.num_gold}'
+    elif int(row['TOP10']) == 2:
+        topicone+='{.num_silver}'
+    elif int(row['TOP10']) == 3:
+        topicone+='{.num_copper}'
+    md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|Palmarès: '+topicone+'<br/>Titre: **'+ titrex2 +'**<br/>Origine: **'+ str(row['Origine']) + '**<br/>Note: ' + dicoNotes[str(row['Note'])] +'<br/> Sortie en **'+str(int(row['Sortie']))+'**<br/>Nb. épisodes: **'+str(int(row['Episodes']))+'**<br/><br/>_'+str(row['F-Commentaire'])+'_\n'
+    # md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|Palmarès: **'+str(int(row['TOP10']))+'**<br/>Titre: **'+ str(row['Titre']) +'**<br/>Origine: **'+ str(row['Origine']) + '**<br/>Note: ' + dicoNotes[str(row['Note'])] +'<br/> Sortie en **'+str(int(row['Sortie']))+'**<br/>Nb. épisodes: **'+str(int(row['Episodes']))+'**<br/><br/>_'+str(row['F-Commentaire']).strip()+'_\n'
     md10 += md
 
 # with open("docs/kserie.md", "w", encoding='utf-8') as f: 
