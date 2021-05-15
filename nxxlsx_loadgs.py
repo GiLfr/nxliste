@@ -1,9 +1,18 @@
+import colorama
+import coloredlogs
+import logging
 import pandas as pd
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow,Flow
 from google.auth.transport.requests import Request
 import os
 import pickle
+
+colorama.init()
+logger = logging.getLogger(__name__)
+coloredlogs.install(level='DEBUG')
+
+logger.info("Analyse du fichier HTML (Ma Liste - Netflix) ...")
 
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
@@ -47,4 +56,5 @@ writer_obj = pd.ExcelWriter('maListeNetflix.xlsx',
                             engine='xlsxwriter')
 df.to_excel(writer_obj, sheet_name='Liste')
 writer_obj.save()
-print('INFO - nxxlsx_loadgs.py - Le fichier maListeNetflix.xlsx est chargé')
+
+logger.info("Le fichier maListeNetflix.xlsx est chargé")
