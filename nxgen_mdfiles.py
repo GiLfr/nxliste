@@ -26,17 +26,6 @@ dicoNotes={
     '5':   ':material-star:{.gold }:material-star:{.gold }:material-star:{.gold }:material-star:{.gold }:material-star:{.gold .heart}'
 }
 
-# headerKS="Titre|Note|Sortie|Nb Episodes\n:---:|:---:|:---:|:---:\n"
-# headerAS="Titre|Note|Sortie|Nb Episodes\n:---:|:---:|:---:|:---:\n"
-# headerEC="Titre|Etat|Sortie|Nb Episodes\n:---:|:---:|:---:|:---:\n"
-# headerKF="Titre|Note|Sortie\n:---:|:---:|:---:\n"
-# headerAF="Titre|Note|Sortie\n:---:|:---:|:---:\n"
-# mdKS="title: K-Séries\n\n#Séries Coréennes\n\n"+headerKS
-# mdAS="title: Autres Séries\n\n#Autres séries (non Coréennes)\n\n"+headerAS
-# mdEC="title: Séries en cours\n\n#Séries en cours\n\n"+headerEC
-# mdKF="title: K-Films\n\n#Films Coréens\n\n"+headerKF
-# mdAF="title: Autres Films\n\n#Autres Films (non Coréens)\n\n"+headerAF
-
 header="Affiche|Information\n:---:|:---\n"
 mdIndex="title: Accueil\n\n#Accueil\n\n"
 mdLast="##Derniers vus\n\n"+header
@@ -78,9 +67,11 @@ for index, row in df.iterrows():
         # md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|' + "en cours" +'|'+str(int(row['Sortie']))+'|'+str(int(row['Episodes']))+'\n'
         mdEC += md
 
+dfx['FinVisionnage'] = pd.to_datetime(dfx['FinVisionnage'], format="%d/%m/%Y")
 dfx.sort_values(by=['FinVisionnage'], ascending=[False], inplace=True)
 df = dfx.set_index("Titre", drop=False)
-for index, row in df.head(5).iterrows():
+# print(df.head(20)['FinVisionnage'])
+for index, row in df.head(10).iterrows():
     titrex2 = str(row['F-Titre'])
     if str(row['K-Titre']) != "nan" :
         titrex2 += ' / ' + str(row['K-Titre'])
