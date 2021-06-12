@@ -29,12 +29,21 @@ def bloc_info(enreg):
     retrait=''
     if re.findall(r"[\d]{1,2}/[\d]{1,2}/[\d]{4}", str(enreg['Deadline'])) :
         date_retrait=pd.to_datetime(enreg['Deadline'], format="%d/%m/%Y")
+        # Affectaton icone de retrait
+        retrait=':material-television:'
+        if enreg['Plateform'] == 'Netflix':
+            retrait=':material-netflix:{ .rouge }'
+        elif enreg['Plateform'] == 'Amazon Prime':
+            retrait=':material-amazon:{ .turquoise }'
+        elif enreg['Plateform'] == 'Viki':
+            retrait=':fontawesome-brands-korvue:'
+        # Test de la deadline
         if date_retrait > datetime.datetime.now():
-            retrait= '<span style="color:darkred">'
-            retrait+='ATTENTION ! - Dernier jour sur '+ enreg['Plateform'] + ' le ' + str(enreg['Deadline'])
+            retrait+='<span style="color:darkred" class="blink">'
+            retrait+=' ATTENTION ! - Dernier jour sur '+ enreg['Plateform'] + ' le ' + str(enreg['Deadline'])
             retrait+='</span>'
         else:
-            retrait= '<span style="color:darkorange">'
+            retrait+='<span style="color:darkorange">'
             retrait+='Retiré de '+ enreg['Plateform'] + ' le ' + str(enreg['Deadline'])
             retrait+='</span>'
     # Le bloc d'info
@@ -42,12 +51,13 @@ def bloc_info(enreg):
         info=''
     else:
         info='Palmarès: ' + topicone + '<br/>'
-    info+='Titre: **'+ titrex2 +'**<br/>'
+    info+=enreg['Type']+' : **'+ titrex2 +'**<br/>'
     info+='Origine: **'+ str(enreg['Origine']) + '**<br/>'
     if enreg['Note'] in dicoNotes:
         info+='Note: ' + dicoNotes[str(enreg['Note'])] +'<br/>'
     info+='Sortie en **'+str(int(enreg['Sortie']))+'**<br/>'
-    info+='Nb. épisodes: **'+str(int(enreg['Episodes']))+'**<br/>'
+    if enreg['Type'] != 'Film':
+        info+='Nb. épisodes: **'+str(int(enreg['Episodes']))+'**<br/>'
     if soustitre != '':
         info+=soustitre+'<br/>'
     if retrait != '':
