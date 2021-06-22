@@ -7,25 +7,11 @@ import pandas as pd
 import re
 import xlsxwriter
 
-def bloc_info(enreg):
-    # Palmarès si classé
-    topicone=''
-    if not (pd.isna(enreg['TOP10'])) :
-        topicone=':material-numeric-'+ str(int(enreg['TOP10'])) +'-circle:'
-        if int(enreg['TOP10']) == 1:
-            topicone+='{.num_gold}'
-        elif int(enreg['TOP10']) == 2:
-            topicone+='{.num_silver}'
-        elif int(enreg['TOP10']) == 3:
-            topicone+='{.num_copper}'
-    # Le titre
-    titrex2 = str(enreg['F-Titre'])
-    if str(enreg['K-Titre']) != "nan" :
-        titrex2 += ' / ' + str(enreg['K-Titre'])
-    # les sous-titres disponible en K
-    soustitre=''
-    if str(enreg['CoreenCC']) == "Oui":
-        soustitre=':material-subtitles-outline: sous-titres en coréens'
+
+def bloc_vign(enreg):
+    # Affichage de la vignette
+    vign='![Affiche de '+str(enreg['Titre'])+'](images/nx/'+str(enreg['Vignette'])+')<br/>'
+    # Retrait de la série/du film
     retrait=''
     if re.findall(r"[\d]{1,2}/[\d]{1,2}/[\d]{4}", str(enreg['Deadline'])) :
         date_retrait=pd.to_datetime(enreg['Deadline'], format="%d/%m/%Y")
@@ -46,6 +32,30 @@ def bloc_info(enreg):
             retrait+='<span style="color:darkorange">'
             retrait+='Retiré de '+ enreg['Plateform'] + ' le ' + str(enreg['Deadline'])
             retrait+='</span>'
+    if retrait != '':
+        vign+=retrait
+    return vign + '|'
+
+
+def bloc_info(enreg):
+    # Palmarès si classé
+    topicone=''
+    if not (pd.isna(enreg['TOP10'])) :
+        topicone=':material-numeric-'+ str(int(enreg['TOP10'])) +'-circle:'
+        if int(enreg['TOP10']) == 1:
+            topicone+='{.num_gold}'
+        elif int(enreg['TOP10']) == 2:
+            topicone+='{.num_silver}'
+        elif int(enreg['TOP10']) == 3:
+            topicone+='{.num_copper}'
+    # Le titre
+    titrex2 = str(enreg['F-Titre'])
+    if str(enreg['K-Titre']) != "nan" :
+        titrex2 += ' / ' + str(enreg['K-Titre'])
+    # les sous-titres disponible en KR (:material-subtitles-outline:)
+    soustitre=''
+    if str(enreg['CoreenCC']) == "Oui":
+        soustitre=':kr: sous-titres en coréens'
     # Le bloc d'info
     if topicone == '':
         info=''
@@ -60,8 +70,6 @@ def bloc_info(enreg):
         info+='Nb. épisodes: **'+str(int(enreg['Episodes']))+'**<br/>'
     if soustitre != '':
         info+=soustitre+'<br/>'
-    if retrait != '':
-        info+=retrait+'<br/>'
     info+='<br/>_'+str(enreg['F-Commentaire']).strip()+'_'
     info+='\n' # retour à la ligne du tableau md
     # Output de la fonction
@@ -101,14 +109,14 @@ dfx.sort_values(by=['Titre','Note'], ascending=[True, False], inplace=True)
 df = dfx.set_index("Titre", drop=False)
 for index, row in df.iterrows():
     if row['Note'] in dicoNotes:
-        md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|'
+        md=bloc_vign(row)
         md+=bloc_info(row)
         if row["Type"] == "Série":
             mdS += md
         elif  row["Type"] == "Film":
             mdF += md
     if row['Note'].lower().strip()[0:8] == "en cours":
-        md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|'
+        md=bloc_vign(row)
         md+=bloc_info(row)
         mdEC += md
 
@@ -116,14 +124,14 @@ dfx['FinVisionnage'] = pd.to_datetime(dfx['FinVisionnage'], format="%d/%m/%Y")
 dfx.sort_values(by=['FinVisionnage'], ascending=[False], inplace=True)
 df = dfx.set_index("Titre", drop=False)
 for index, row in df.head(10).iterrows():
-    md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|'
+    md=bloc_vign(row)
     md+=bloc_info(row)
     mdLast += md
 
 dfx.sort_values(by=['TOP10'], ascending=[True], inplace=True)
 df = dfx.set_index("Titre", drop=False)
 for index, row in df.head(10).iterrows():
-    md='![Affiche de '+str(row['Titre'])+'](images/nx/'+str(row['Vignette'])+')|'
+    md=bloc_vign(row)
     md+=bloc_info(row)
     md10 += md
 
