@@ -101,20 +101,42 @@ mdIndex="title: Accueil\n\n#Accueil\n\n"
 mdLast="##Derniers vus\n\n"+header
 mdEC="\n\n##En cours...\n\n"+header
 md10="\n\n##Top 10\n\n"+header
-mdS="title: Séries\n\n#Les Séries (par ordre alphabétique)\n\n"+header
-mdF="title: Films\n\n#Les Films (par ordre alphabétique)\n\n"+header
+mdS="title: Séries\n\n#Les Séries\n_(par pays et par ordre alphabétique)_"
+mdF="title: Films\n\n#Les Films\n_(par pays et par ordre alphabétique)_"
+mdD="title: Documentaires\n\n#Les Documentaires\n_(par pays et par ordre alphabétique)_"
+mdE="title: Emmissions\n\n#Les Emissions\n_(par pays et par ordre alphabétique)_"
+OrigineS = ''
+OrigineF = ''
+OrigineD = ''
+OrigineE = ''
 
 dfx = pd.read_excel('maListeNetflix.xlsx', index_col=None, sheet_name='Liste', usecols='B:R')
-dfx.sort_values(by=['Titre','Note'], ascending=[True, False], inplace=True)
+dfx.sort_values(by=['Type','Origine','Titre'], ascending=[True, True, True], inplace=True)
 df = dfx.set_index("Titre", drop=False)
 for index, row in df.iterrows():
     if row['Note'] in dicoNotes:
         md=bloc_vign(row)
         md+=bloc_info(row)
         if row["Type"] == "Série":
+            if OrigineS != row['Origine']:
+                mdS +="\n\n##" + row['Origine'] + "\n\n"+header
             mdS += md
+            OrigineS = row["Origine"] 
         elif  row["Type"] == "Film":
+            if OrigineF != row['Origine']:
+                mdF +="\n\n##" + row['Origine'] + "\n\n"+header
             mdF += md
+            OrigineF = row["Origine"] 
+        elif  row["Type"] == "Documentaire":
+            if OrigineD != row['Origine']:
+                mdD +="\n\n##" + row['Origine'] + "\n\n"+header
+            mdD += md
+            OrigineD = row["Origine"] 
+        elif  row["Type"] == "Emission":
+            if OrigineE != row['Origine']:
+                mdE +="\n\n##" + row['Origine'] + "\n\n"+header
+            mdE += md
+            OrigineE = row["Origine"] 
     if row['Note'].lower().strip()[0:8] == "en cours":
         md=bloc_vign(row)
         md+=bloc_info(row)
@@ -144,6 +166,12 @@ with open("docs/film.md", "w", encoding='utf-8') as f:
 
 with open("docs/serie.md", "w", encoding='utf-8') as f: 
     f.write(mdS) 
+
+with open("docs/documentaire.md", "w", encoding='utf-8') as f: 
+    f.write(mdD) 
+
+# with open("docs/emission.md", "w", encoding='utf-8') as f: 
+#     f.write(mdE) 
 
 logger.info("Fin de la génération")
 print('\x1b[6;30;42m' + 'Success!' + '\x1b[0m')
