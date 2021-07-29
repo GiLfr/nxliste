@@ -23,6 +23,7 @@ fi
 git flow release start $next develop
 
 # Finalisation de la version
+git tag -a release/$next -m "publication"
 git flow release finish $next
 git push origin master
 git push origin develop
