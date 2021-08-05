@@ -50,6 +50,8 @@ def bloc_info(enreg):
             topicone+='{.num_copper}'
     # Le titre
     titrex2 = str(enreg['F-Titre'])
+    if str(enreg['F-Titre']) != str(enreg['Titre']) :
+        titrex2 += ' / ' + str(enreg['Titre'])
     if str(enreg['K-Titre']) != "nan" :
         titrex2 += ' / ' + str(enreg['K-Titre'])
     # les sous-titres disponible en KR (:material-subtitles-outline:)
