@@ -1,5 +1,6 @@
 .git/
 .venv/
+.vscode/
 **/*.xlsx
 Netflix.html
 Netflix_files/
