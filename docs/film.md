@@ -31,7 +31,14 @@ Affiche|Information
 Affiche|Information
 :---:|:---
 ![Affiche de Cinquante Nuances de Grey](images/nx/AAAABXdn_1wIV9EKx9AW82R-BYoM7Xedp7x27laWjhXN3pJ4Su89C5Buw5T907ZTBFu70MSDwajb1sYBlKGVm-O5ubh6GM0.webp)<br/>|Film : **Cinquante Nuances de Grey**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.gold }:material-star:{.gold .heart}:material-star:{.grey }:material-star:{.grey }:material-star:{.grey }<br/>Sortie en **2015**<br/><br/>_Sujet mal abordé, scénario trop basique, peu crédible._
-![Affiche de Fifty Shades Freed](images/nx/AAAABY2RxJfd8cqTBdUm7yrLmtahlVf_Sx1t83l9LXk-HKebTwZoZC7bvcqLJkW5mZXmZA-5rcKGby5z8oMOlSTcjaZKmnQ.webp)<br/>:material-netflix:{ .rouge }<span style="color:darkorange">Retiré de Netflix le 06/08/2021</span>|Film : **50 nuances plus claires / Fifty Shades Freed**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.gold }:material-star:{.gold .heart}:material-star:{.grey }:material-star:{.grey }:material-star:{.grey }<br/>Sortie en **2018**<br/><br/>_Un scénario bien trop basique, sans surprise._
+![Affiche de Cinquante nuances plus claires](images/nx/AAAABY2RxJfd8cqTBdUm7yrLmtahlVf_Sx1t83l9LXk-HKebTwZoZC7bvcqLJkW5mZXmZA-5rcKGby5z8oMOlSTcjaZKmnQ.webp)<br/>|Film : **Fifty Shades Freed / Cinquante nuances plus claires**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.gold }:material-star:{.gold .heart}:material-star:{.grey }:material-star:{.grey }:material-star:{.grey }<br/>Sortie en **2018**<br/><br/>_Un scénario bien trop basique, sans surprise._
+
+
+##France
+
+Affiche|Information
+:---:|:---
+![Affiche de Colombiana](images/nx/AAAABYwyEOcV40tI6eIRSH7_Ke1pJ8xQXG-AxoDT5mM6PZbFHHrmhXo0gH5XTcqy072m9dwD4hN5f4g5963m3pd8fHYIO1k.webp)<br/>|Film : **nan / Colombiana**<br/>Origine: **France**<br/>Note: :material-star:{.gold }:material-star:{.gold }:material-star:{.gold }:material-star:{.gold .heart}:material-star:{.grey }<br/>Sortie en **2011**<br/><br/>_Sénario bien fait._
 
 
 ##Japon
