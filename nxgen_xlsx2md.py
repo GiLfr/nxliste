@@ -63,7 +63,7 @@ def bloc_info(enreg):
         info=''
     else:
         info='Palmarès: ' + topicone + '<br/>'
-    info+=enreg['Type']+' : **'+ titrex2 +'**<br/>'
+    info+=str(enreg['Type'])+' : **'+ str(titrex2) +'**<br/>'
     info+='Origine: **'+ str(enreg['Origine']) + '**<br/>'
     if enreg['Note'] in dicoNotes:
         info+='Note: ' + dicoNotes[str(enreg['Note'])] +'<br/>'
