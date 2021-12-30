@@ -41,6 +41,7 @@ Affiche|Information
 Affiche|Information
 :---:|:---
 ![Affiche de Colombiana](images/nx/AAAABYwyEOcV40tI6eIRSH7_Ke1pJ8xQXG-AxoDT5mM6PZbFHHrmhXo0gH5XTcqy072m9dwD4hN5f4g5963m3pd8fHYIO1k.webp)<br/>|Film : **Colombiana**<br/>Origine: **France**<br/>Note: :material-star:{.gold }:material-star:{.gold }:material-star:{.gold }:material-star:{.gold .heart}:material-star:{.grey }<br/>Sortie en **2011**<br/><br/>_Sénario bien fait, qui s'enchaine bien._
+![Affiche de Sentinelle](images/nx/AAAABQnrIukxbICg-5QIJJfO8OorTjf1EqcGhbGCKznpfjMHByhWiOj4dsvG.jpg)<br/>|Film : **Sentinelle**<br/>Origine: **France**<br/>Note: :material-star:{.gold }:material-star-half-full:{.gold .heart}:material-star:{.grey }:material-star:{.grey }:material-star:{.grey }<br/>Sortie en **2021**<br/><br/>_Pas du tout crédible._
 
 
 ##Japon
@@ -49,3 +50,4 @@ Affiche|Information
 :---:|:---
 ![Affiche de Blade of the Immortal](images/nx/AAAABdZE57t0al55bubVR58FsBLUVbDMZRfPyeyve8cGrUDRmcAwNDKufTj5cRcAjTpk3d4OQFJdYffvTlfYpYxsgSd_SL_WXitwNr4x4WF8a7SV2JtYt4TIjoMbLjmY.jpg)<br/>|Film : **Blade of the Immortal**<br/>Origine: **Japon**<br/>Note: :material-star:{.gold }:material-star:{.gold }:material-star-half-full:{.gold .heart}:material-star:{.grey }:material-star:{.grey }<br/>Sortie en **2017**<br/><br/>_Cela relève plus de la BD que du film de samouraï. Trop de surenchère._
 ![Affiche de Kenshin : L’achèvement](images/nx/AAAABaHdepm2ocyCMHYCNRLtjB_UIAhkAsy1Vhkb-0w9wBJY0G8xVtpjFTkUfSmgcNGvU190mjKx25Gdp5nJqGzIIx-7W_xGH8N-npXwkYRA2W5VR0pYzgLM1n6H0arD.jpg)<br/>|Film : **Kenshin : L’achèvement**<br/>Origine: **Japon**<br/>Note: :material-star:{.gold }:material-star-half-full:{.gold .heart}:material-star:{.grey }:material-star:{.grey }:material-star:{.grey }<br/>Sortie en **2021**<br/><br/>_Bien moins bon que le premier film, tiens plus du manga, les combats ne sont absolument pas réalistes._
+![Affiche de THE FABLE](images/nx/AAAABYSivk18xkyxSTXxbeVZbP04MifVPkYkEIDODAEO0ebRboRH1sQZeCJPew52HhCH_D1qubKqpJ71i5sx9GYxWtpmRg8.webp)<br/>|Film : **The Fable: The Killer Who Doesn't Kill / THE FABLE**<br/>Origine: **Japon**<br/>Note: :material-star:{.gold }:material-star:{.gold .heart}:material-star:{.grey }:material-star:{.grey }:material-star:{.grey }<br/>Sortie en **2019**<br/><br/>_Style manga, beaucoup de combats et quelques parties un peu fun._
