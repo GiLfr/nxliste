@@ -34,6 +34,7 @@ Affiche|Information
 :---:|:---
 ![Affiche de Cinquante Nuances de Grey](images/nx/AAAABXdn_1wIV9EKx9AW82R-BYoM7Xedp7x27laWjhXN3pJ4Su89C5Buw5T907ZTBFu70MSDwajb1sYBlKGVm-O5ubh6GM0.webp)<br/>|Film : **Cinquante Nuances de Grey**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.gold }:material-star:{.gold .heart}:material-star:{.grey }:material-star:{.grey }:material-star:{.grey }<br/>Sortie en **2015**<br/><br/>_Sujet mal abordé, scénario trop basique, peu crédible._
 ![Affiche de Cinquante nuances plus claires](images/nx/AAAABY2RxJfd8cqTBdUm7yrLmtahlVf_Sx1t83l9LXk-HKebTwZoZC7bvcqLJkW5mZXmZA-5rcKGby5z8oMOlSTcjaZKmnQ.webp)<br/>|Film : **Fifty Shades Freed / Cinquante nuances plus claires**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.gold }:material-star:{.gold .heart}:material-star:{.grey }:material-star:{.grey }:material-star:{.grey }<br/>Sortie en **2018**<br/><br/>_Un scénario bien trop basique, sans surprise._
+![Affiche de Don't Look Up : Déni cosmique](images/nx/AAAABTSlUl05PfPa1D7ANeFq4y22qpAPPGHH3z9JLU8jLLw1CcdlkVJZM6MrpNS8SyOmUltpySnRgMeoIQsG3YipUfviJlOTQ44LJZdh00dz8ynewWVVH0TGcSfHlj-wmWELn7tWKEGs8aJ0zssDhVDPS6Dq7oD8DcSkXUJtw2POyOYtSE8W6bkejwU.jpg)<br/>|Film : **Don't Look Up : Déni cosmique**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.gold }:material-star:{.gold }:material-star:{.gold }:material-star:{.gold .heart}:material-star:{.grey }<br/>Sortie en **2021**<br/><br/>_Le monde politico-médiatique tel qu'il est._
 
 
 ##France
