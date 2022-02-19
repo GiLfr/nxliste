@@ -57,7 +57,7 @@ dfd = dfi.merge(dfn, on='Titre', how = 'outer' ,indicator=True).loc[lambda x : x
 dfr = dfd.drop(columns=['Unnamed: 0', 'Vignette_x', 'Type', 'Origine', 'Sortie', 'Saison', 'Episodes', 'Note', 'FinVisionnage','Deadline', 'F-Commentaire', '_merge'])
 dfr["Type"]="Série"
 dfr["Origine"]="Corée du Sud"
-dfr["Sortie"]="2021"
+dfr["Sortie"]="2022"
 dfr["Saison"]="1"
 dfr["Episodes"]="16"
 dfr["Note"]="à voir..."

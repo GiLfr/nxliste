@@ -1,16 +1,16 @@
 title: Films
 
-#Les Films
+# Les Films
 _(par pays et par ordre alphabétique)_
 
-##Chine
+## Chine
 
 Affiche|Information
 :---:|:---
 ![Affiche de Tik Tok](images/nx/AAAABdROPuHZrTEE9R6v-dV5INumYePRIKshV1e-xH5BRgu9Eea_GqO-8uLKgar8vNoBd_KcRiLkEWanFKsCLKxUYnEP4n4.webp)<br/>:material-netflix:{ .rouge }<span style="color:darkorange">Retiré de Netflix le 30/06/2021</span>|Film : **Tik Tok**<br/>Origine: **Chine**<br/>Note: :material-star:{.gold }:material-star:{.gold }:material-star-half-full:{.gold .heart}:material-star:{.grey }:material-star:{.grey }<br/>Sortie en **2016**<br/><br/>_Film chinois réalisé en Corée. Scénario classique de style américain, sans grande surprise. Les démineurs et les policiers ne sont pas très futés._
 
 
-##Corée du Sud
+## Corée du Sud
 
 Affiche|Information
 :---:|:---
@@ -30,7 +30,7 @@ Affiche|Information
 ![Affiche de Wish You](images/nx/AAAABXAo_BUi6aIFgzW7gibJA9jI4NCKQoGzB_UwYt0raOzb_aSgkaRE3uBk.jpg)<br/>|Film : **Par la voix des airs / Wish You / 위시유**<br/>Origine: **Corée du Sud**<br/>Note: :material-star:{.gold }:material-star:{.gold }:material-star:{.gold .heart}:material-star:{.grey }:material-star:{.grey }<br/>Sortie en **2021**<br/>:kr: sous-titres en coréens<br/><br/>_Film sur fond d'histoire un peu LGBT dans le monde de la musique, plutôt bien réalisé, même les personnages secondaires sont aussi intéressants._
 
 
-##Etats-Unis
+## Etats-Unis
 
 Affiche|Information
 :---:|:---
@@ -41,7 +41,7 @@ Affiche|Information
 ![Affiche de Planète terreur](images/nx/AAAABdComoUkx9aS6_dtr8y7paZ2KT5Nhvp7swWz3MB7vegtYX91Uz-fS87wElQPOvSEzIFwbNFF0fzk2U-dY-je37h1SmaB8pvZln8dB23-q1cAla5TJeGmHnWxrYjSn-4S6Y0yYDjxGEbb5kYUon3akQ-S4yU.webp)<br/>|Film : **Planète terreur**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.grey }:material-star:{.grey }:material-star:{.grey }:material-star:{.grey }:material-star:{.grey }<br/>Sortie en **2007**<br/><br/>_Sans intérêt, tentative de faire quelques choses de décalé, totalement loupé._
 
 
-##France
+## France
 
 Affiche|Information
 :---:|:---
@@ -49,7 +49,7 @@ Affiche|Information
 ![Affiche de Sentinelle](images/nx/AAAABQnrIukxbICg-5QIJJfO8OorTjf1EqcGhbGCKznpfjMHByhWiOj4dsvG.jpg)<br/>|Film : **Sentinelle**<br/>Origine: **France**<br/>Note: :material-star:{.gold }:material-star-half-full:{.gold .heart}:material-star:{.grey }:material-star:{.grey }:material-star:{.grey }<br/>Sortie en **2021**<br/><br/>_Pas du tout crédible._
 
 
-##Japon
+## Japon
 
 Affiche|Information
 :---:|:---
