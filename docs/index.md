@@ -1,8 +1,8 @@
 title: Accueil
 
-#Accueil
+# Accueil
 
-##Derniers vus
+## Derniers vus
 
 Affiche|Information
 :---:|:---
@@ -20,7 +20,7 @@ Affiche|Information
 
 
 
-##En cours...
+## En cours...
 
 Affiche|Information
 :---:|:---
@@ -32,7 +32,7 @@ Affiche|Information
 
 
 
-##Top 10
+## Top 10
 
 Affiche|Information
 :---:|:---

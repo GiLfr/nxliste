@@ -1,16 +1,16 @@
 title: Séries
 
-#Les Séries
+# Les Séries
 _(par pays et par ordre alphabétique)_
 
-##Australie
+## Australie
 
 Affiche|Information
 :---:|:---
 ![Affiche de Secret City](images/nx/AAAABZVsjRNubIpoSKNqqV83TIKOphZxnYBbRijKj9dnKsolpXgG2sIDc7gGf2yimGbguTLrdoAnWIql5XbcPfZQbaZbTog4dp2zpSOF895w9rhhmSagSKcqm-wFnjz-.jpg)<br/>|Série : **Secret City**<br/>Origine: **Australie**<br/>Note: :material-star:{.gold }:material-star:{.gold }:material-star:{.gold }:material-star:{.gold .heart}:material-star:{.grey }<br/>Sortie en **2016**<br/>Nb. épisodes: **12**<br/><br/>_Politique fiction bien monté._
 
 
-##Chine
+## Chine
 
 Affiche|Information
 :---:|:---
@@ -20,7 +20,7 @@ Affiche|Information
 ![Affiche de The Rise of Phoenixes](images/nx/AAAABdAS9iQW5uiaInKrsZuDfny3RXZYYFeVQZHNCK6Ei7A4SWcBHwz56EeORRxtA6xl8C7DCvRxjFTaIz5CyYYC0kyeMteyAth_Pv4X9q7Sq-CPyEGPSbiZZMEYg_p_.jpg)<br/>|Série : **The Rise of Phoenixes**<br/>Origine: **Chine**<br/>Note: :material-star:{.gold }:material-star:{.gold }:material-star:{.gold }:material-star:{.gold .heart}:material-star:{.grey }<br/>Sortie en **2018**<br/>Nb. épisodes: **70**<br/><br/>_Excellent scénario, les 70 épisodes passent rapidement car le suspense est maintenu tout du long._
 
 
-##Corée du Sud
+## Corée du Sud
 
 Affiche|Information
 :---:|:---
@@ -241,7 +241,7 @@ Affiche|Information
 ![Affiche de 용팔이](images/nx/AAAABXWe1lZafMJDzoRUHP5YZEC2QqLalvi9N0073cLusDMqyNzgNtmYM2SgFrj7SZSHN2tMZqrbgB-EHzDjRautW1d6O2Q.webp)<br/>|Série : **Young Pal / 용팔이 / 용팔이**<br/>Origine: **Corée du Sud**<br/>Note: :material-star:{.gold }:material-star:{.gold }:material-star:{.gold }:material-star:{.gold .heart}:material-star:{.grey }<br/>Sortie en **2015**<br/>Nb. épisodes: **18**<br/><br/>_Très bonne série, avec toujours cette excellente actrice (Kim Tae-hee)._
 
 
-##Etats-Unis
+## Etats-Unis
 
 Affiche|Information
 :---:|:---
@@ -264,7 +264,7 @@ Affiche|Information
 ![Affiche de Warrior Nun](images/nx/AAAABbPnCHkd4g3u0CYk-CiiGw7PkEi0gsJ7kTkDfgjjKkxPHIQt-K0ujVGgs9o23KsXpgKyhW0wvkCDSwMyCoNwfqDQ4E4tpkuT46axTFI8jISbSYvXY8LXGGb5lc7t.jpg)<br/>|Série : **Warrior Nun**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.gold }:material-star:{.gold }:material-star-half-full:{.gold .heart}:material-star:{.grey }:material-star:{.grey }<br/>Sortie en **2020**<br/>Nb. épisodes: **10**<br/><br/>_Bonne idée à la base, mais scénarios trop classiques, trop prévisibles._
 
 
-##France
+## France
 
 Affiche|Information
 :---:|:---
@@ -272,7 +272,7 @@ Affiche|Information
 ![Affiche de Lupin](images/nx/AAAABRr4tDSu8BI7VYBLfSnCqKvmR6UvFjQC6AMDipCHW9_yEasXQcd7OWegSQ5T7SZosD98lSzY8SK7Qmjb40GzDvsXgmPG5nFiB4yx-44Wk5scWTUhe3-siy7nQR_fp7Z1a3qiEMeKFrZRKyFtEp8Eycnd04YS9NNezNdqJOvhJsbu19R4ofIwbos.jpg)<br/>|Série : **Lupin**<br/>Origine: **France**<br/>Note: :material-star:{.gold }:material-star:{.gold .heart}:material-star:{.grey }:material-star:{.grey }:material-star:{.grey }<br/>Sortie en **2021**<br/>Nb. épisodes: **10**<br/><br/>_Bon 1er épisode, mais bien moins bon après. Il y a aussi de nombreuses d'incohérence dans le script, un comble pour du Arsène Lupin._
 
 
-##Japon
+## Japon
 
 Affiche|Information
 :---:|:---
@@ -281,14 +281,14 @@ Affiche|Information
 ![Affiche de The Journalist](images/nx/AAAABYMCeJK1yxF4rMTL2G_MwCk_gV1bUe2Ev-R7OuWUb_GTEvh1cfo6EBbL8AcfHT2RNEiUK8Cn_FbMnrx86Kwszq_Q0MhqwPChViwDX--gDDr5eLILhZqK8jcOoPXg.jpg)<br/>|Série : **The Journalist**<br/>Origine: **Japon**<br/>Note: :material-star:{.gold }:material-star:{.gold }:material-star:{.gold .heart}:material-star:{.grey }:material-star:{.grey }<br/>Sortie en **2022**<br/>Nb. épisodes: **6**<br/><br/>_Sombre, relativement lent, plutôt psychologique, cette série décrit un monde politique complexe et sans concession._
 
 
-##Norvège
+## Norvège
 
 Affiche|Information
 :---:|:---
 ![Affiche de Occupied](images/nx/AAAABVtrJSFCYqEHsHKhdUOAFkD953nPd5bHpBUorntG3sq8ibph6YXOrNg2B5BqJKMh-wX0wwlAKL373cZcCzbVNkxGD6Q.webp)<br/>|Série : **Occupied**<br/>Origine: **Norvège**<br/>Note: :material-star:{.gold }:material-star:{.gold }:material-star:{.gold }:material-star:{.gold }:material-star-half-full:{.gold .heart}<br/>Sortie en **2019**<br/>Nb. épisodes: **18**<br/><br/>_Excellent! Très bonne idée de contexte politico-stratégique._
 
 
-##Royaume-Uni
+## Royaume-Uni
 
 Affiche|Information
 :---:|:---

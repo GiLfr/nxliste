@@ -4,66 +4,34 @@ site_description: "Mes listes de Séries et de Films sur Netflix"
 site_author: "Gilles LANTERI"
 site_url: "https://gilfr.github.io/docs/"
 
-# Dépôt de code source
-# repo_name: "github"
-# repo_url: "https://github.com/gilfr/nxliste/"
-# edit_uri: "src/develop/docs/"
-
 # Copyright
-copyright: "Copyright &copy; 2020-2021 Gilles Lantéri"
+# copyright: "Copyright &copy; 2020-2022 Gilles Lantéri"
 
 # Configuration
 theme:
   name: "material"
   palette:
-    primary: deep purple
-    accent: purple
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  # favicon: "images/favicon/logo.svg"
   icon:
     logo: material/movie-open-check
   features:
-    # - navigation.indexes
     - navigation.instant
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
     - toc.integrate
   language: fr
-  # dark: "true"
-  # # favicon: "images/favicon/logo.svg"
-  # # logo: "images/logo-white.svg"
-  # logo:
-  #   icon: "movie-open-check"
-  # palette:
-  #   primary: "deep orange"
-  #   accent: "indigo"
-
-# # Personnalisation
-# extra:
-    # alternate:
-    #   - name: Français
-    #     link: /fr/
-    #     lang: fr
-    #   - name: 한국어
-    #     link: /kr/
-    #     lang: kr
-    # search:
-    #   language: "en"
-#   social:
-#     - type: "github"
-#       link: "https://github.com/gilfr"
-
-# Google Analytics
-# google_analytics:
-#   - "UA-XXXXXXXX-X"
-#   - "auto"
-
-# # Plugins
-# plugins:
-#   - search:
-#       # separator: '[\s\-\.]+'
-#       prebuild_index: true
-#   # - git-revision-date
-#   # - markdownmermaid
 
 # Fichiers techniques
 extra_css:
@@ -71,10 +39,8 @@ extra_css:
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
   - javascripts/tables.js
-  #   - "javascripts/flowchart.js"
-  #   - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
 
-# # Extensions
+# Extensions
 markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
@@ -84,24 +50,4 @@ markdown_extensions:
           - overrides/.icons
   - attr_list
   - admonition
-#   - codehilite:
-#       guess_lang: false
-#   - footnotes
-#   - meta
-#   - pymdownx.betterem:
-#       smart_enable: all
-#   - pymdownx.caret
-#   - pymdownx.critic
-#   - pymdownx.details
-#   # - pymdownx.emoji.emojione # Payant
-#   - pymdownx.inlinehilite
-#   - pymdownx.magiclink
-#   - pymdownx.mark
-#   - pymdownx.progressbar
-#   - pymdownx.smartsymbols
-#   - pymdownx.superfences
-#   - pymdownx.tasklist:
-#       custom_checkbox: true
-#   - pymdownx.tilde
-#   - toc:
-#       permalink: true
+  - tables
