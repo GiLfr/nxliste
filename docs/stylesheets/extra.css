@@ -161,7 +161,7 @@
 
 table thead {
     background-color: var(--md-primary-fg-color);
-    color: white;
+    /*color: white;*/
 }
 
 #image {
