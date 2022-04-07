@@ -281,7 +281,15 @@ Affiche|Information
 Affiche|Information
 :---:|:---
 ![Affiche de La Révolution](images/nx/AAAABR-pd7ozblVG4uSrS9sa8djKosbRC9t0ZumK0Q0NsKJFd9kbRZfkrAunkSu1Q1bnvlxrE84UGrQbrVuu5e8Fo4EjS5O5-Y6-ORpiB1gi4_tYY8mbqT2kjsM5ErNS.jpg)<br/>|Série : **La Révolution**<br/>Origine: **France**<br/>Note: :material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2020**<br/>Nb. épisodes: **8**<br/><br/>_La noirceur est dominante, l'ensemble est trop basique._
+![Affiche de Le Brio](images/nx/AAAABb2K4tt-4JmmWB7FIYWsAuv30WTqq0kqR_yHNOmG3ya0-9JN9xl-m_ZxaDMpqE8B1-RuvEh0EL-gTY3b6bxnBsMPioo.webp)<br/>|Série : **Le Brio**<br/>Origine: **France**<br/>Note: :material-star:{.gold .heart}:material-star:{.gold .heart}:material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-outline:{.grey }<br/>Sortie en **2022**<br/>Nb. épisodes: **1**<br/><br/>_nan_
 ![Affiche de Lupin](images/nx/AAAABRr4tDSu8BI7VYBLfSnCqKvmR6UvFjQC6AMDipCHW9_yEasXQcd7OWegSQ5T7SZosD98lSzY8SK7Qmjb40GzDvsXgmPG5nFiB4yx-44Wk5scWTUhe3-siy7nQR_fp7Z1a3qiEMeKFrZRKyFtEp8Eycnd04YS9NNezNdqJOvhJsbu19R4ofIwbos.jpg)<br/>|Série : **Lupin**<br/>Origine: **France**<br/>Note: :material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2021**<br/>Nb. épisodes: **10**<br/><br/>_Bon 1er épisode, mais bien moins bon après. Il y a aussi de nombreuses d'incohérence dans le script, un comble pour du Arsène Lupin._
+
+
+## Israël
+
+Affiche|Information
+:---:|:---
+![Affiche de Fauda](images/nx/AAAABS4sBdI4ZL-rsD6Eo4JcShexLPuVkYoaufcKAeg3IUsx9o5yPyWyY2Jt0Vx5RheU4anw09588HuiIeo-mw4Ua8aPpSo.webp)<br/>|Série : **Fauda**<br/>Origine: **Israël**<br/>Note: :material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2020**<br/>Nb. épisodes: **36**<br/><br/>_Fête foraine en territoire palestinien, la contextualisation semble pas mal mais complètement pro israelien, les négociations et les filatures ne sont pas crédibles._
 
 
 ## Japon
