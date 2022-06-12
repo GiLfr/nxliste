@@ -3,6 +3,13 @@ title: Documentaires
 # Les Documentaires
 _(par pays et par ordre alphabétique)_
 
+## Corée du Sud
+
+Affiche|Information
+:---:|:---
+![Affiche de Le porc : Une passion coréenne](images/nx/AAAABe6RYPgqDFJpgtf4E-pq5oUBIoO5hwDQ7U2zuIRkmrPhRP2QalfgsdLMxhSqLEvsjiGwxCRX20Ww_xu25zrWGxMq7xE.webp)<br/>|Documentaire : **Le porc : Une passion coréenne / 삼겹살 랩소디**<br/>Origine: **Corée du Sud**<br/>Note: :material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-half-full:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2020**<br/>Nb. épisodes: **2**<br/>:kr: sous-titres en coréens<br/><br/>_Documentaire sur la cuisine coréenne. Pour les amateurs de bonne chair, vegan s'abstenir._
+
+
 ## Etats-Unis
 
 Affiche|Information
