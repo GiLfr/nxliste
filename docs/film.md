@@ -3,10 +3,18 @@ title: Films
 # Les Films
 _(par pays et par ordre alphabétique)_
 
+## Australie
+
+Affiche|Information
+:---:|:---
+![Affiche de Interceptor](images/nx/AAAABePnlyfxwPJkDz7o1h871aulb4K_cb0mVI85JV1El3Y-WqfXC0vWNPHYoAsfgqPdm-BlA9Qas0jjISuScv4XdAOZ4Wht0Z-mQyUyK_RXnU1MzQcXg9UdnmKlqbV6dWhlgzidSt2LF54AwBRc-KX_ltHPxf2-AOOYRHXZ0t4WMicGXxSgIGnLO1qNxJuyEC4.jpg)<br/>|Film : **Interceptor**<br/>Origine: **Australie**<br/>Note: :material-star-half-full:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2022**<br/><br/>_C'est du déjà vu, rien de nouveau. Le niveau zéro du film d'action._
+
+
 ## Chine
 
 Affiche|Information
 :---:|:---
+![Affiche de My Best Friend's Wedding](images/nx/AAAABbxZPuMEnJOP0-YEHNQVcfq7zIvOBlz78YbGcwwe3MfO2t5BxrIl_aR_b5YQGNwGXl88Fzt3ow2qzHIBcnrIvJrVjVc.webp)<br/>|Film : **My Best Friend's Wedding**<br/>Origine: **Chine**<br/>Note: :material-star:{.gold .heart}:material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2016**<br/><br/>_Le mariage de son meilleur ami, déjà traité mais plutôt bien fait._
 ![Affiche de Tik Tok](images/nx/AAAABdROPuHZrTEE9R6v-dV5INumYePRIKshV1e-xH5BRgu9Eea_GqO-8uLKgar8vNoBd_KcRiLkEWanFKsCLKxUYnEP4n4.webp)<br/>:material-netflix:{ .rouge }<span style="color:darkorange">Retiré de Netflix le 30/06/2021</span>|Film : **Tik Tok**<br/>Origine: **Chine**<br/>Note: :material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-half-full:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2016**<br/><br/>_Film chinois réalisé en Corée. Scénario classique de style américain, sans grande surprise. Les démineurs et les policiers ne sont pas très futés._
 
 
@@ -48,6 +56,7 @@ Affiche|Information
 ![Affiche de Planète terreur](images/nx/AAAABdComoUkx9aS6_dtr8y7paZ2KT5Nhvp7swWz3MB7vegtYX91Uz-fS87wElQPOvSEzIFwbNFF0fzk2U-dY-je37h1SmaB8pvZln8dB23-q1cAla5TJeGmHnWxrYjSn-4S6Y0yYDjxGEbb5kYUon3akQ-S4yU.webp)<br/>|Film : **Planète terreur**<br/>Origine: **Etats-Unis**<br/>Note: :material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2007**<br/><br/>_Sans intérêt, pseudo-tentative de faire quelques choses de décalé, totalement loupé._
 ![Affiche de Terminator Genisys](images/nx/AAAABWOuIixOoieOYFh_rfv9Z1qcNNzP9RwomlTx6HJw41WFRTVQGDE8NUZaan5tPy100lum7cGcHDR480DcPx-gEIOubR8.webp)<br/>|Film : **Terminator Genisys**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-half-full:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2015**<br/><br/>_Course poursuite interminable, classique du genre; même si c'est très bien fait, rien de nouveau dans la série de terminator._
 ![Affiche de Wonder Woman](images/nx/AAAABY_B1nw4jzrwT9uClGRwioWkdJ1xvNIoJ5v-uC92TjHyWL-nAkPpGNGR9SCDF7aJj8l258QfwGYyp1zDnRrnr-Wm91w.webp)<br/>:material-netflix:{ .rouge }<span style="color:darkorange">Retiré de Netflix le 18/03/2022</span>|Film : **Wonder Woman**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.gold .heart}:material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2018**<br/><br/>_Plutôt bien fait, mais un peu trop dans l'américanade de base, malgré certains efforts sur le contexte mythique qui reste mal développé._
+![Affiche de Wu Assassins](images/nx/AAAABeZswhZEWZWDbRKWARtgusv5MiAgVUYOrJuCBgOExdkLFpgjgdEnJYcn.jpg)<br/>|Film : **Wu Assassins**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.gold .heart}:material-star-half-full:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2019**<br/><br/>_Le scénario part un peu dans tous les sens, les flashback sont mal venus, l'ensemble est assez confus. Seuls les combats sont bien fait._
 ![Affiche de Échec et mort](images/nx/AAAABeR2pCcUAKk1H6jiHNdib46GQcB8dxAPnoyB7hSFvUMF-N3ABYiUxkfBHLxpWdtQWednzyGmF5oMp2MdOjKakAl7MLhcf9aaVfd4Ut_KDcrqyBpJoY8c0LSuPeMh21eHj4oCzNoveOB3Zspz8Z35jt5NMrc.webp)<br/>|Film : **Hard to kill / Échec et mort**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **1990**<br/><br/>_Série B classique américaine._
 
 
