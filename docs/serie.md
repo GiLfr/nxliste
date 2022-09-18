@@ -358,6 +358,13 @@ Affiche|Information
 ![Affiche de Fauda](images/nx/AAAABS4sBdI4ZL-rsD6Eo4JcShexLPuVkYoaufcKAeg3IUsx9o5yPyWyY2Jt0Vx5RheU4anw09588HuiIeo-mw4Ua8aPpSo.webp)<br/>|Série : **Fauda**<br/>Origine: **Israël**<br/>Note: :material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2020**<br/>Nb. épisodes: **36**<br/><br/>_Fête foraine en territoire palestinien, la contextualisation semble pas mal mais complètement pro israelien, les négociations et les filatures ne sont pas crédibles._
 
 
+## Italie
+
+Affiche|Information
+:---:|:---
+![Affiche de Romulus](images/nx/romulus_341x192.jpg)<br/>|Série : **Romulus**<br/>Origine: **Italie**<br/>Note: :material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2020**<br/>Nb. épisodes: **8**<br/><br/>_Série pseudo historique très sombre, trop sombre, surtout les nombreuses séquences dans la pénombre où on ne distingue rien. Dommage, surtout que seuls les 8 premières épisodes sont disponibles._
+
+
 ## Japon
 
 Affiche|Information
