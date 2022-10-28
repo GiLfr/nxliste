@@ -36,16 +36,16 @@ coloredlogs.install(level='DEBUG')
 dfi = pd.read_excel('maListeNetflix.xlsx', index_col=None, sheet_name='Liste', usecols='A:L')
 # dfi = pd.read_excel('maListeNetflix.xlsx', index_col=None, sheet_name='Liste', usecols = "B,C")
 
-html = open('Netflix.html','r', encoding="utf8")
-soup = BeautifulSoup(html,'html.parser')
+html = open('Netflix.html', 'r', encoding="utf8")
+soup = BeautifulSoup(html, 'html.parser')
 m1 = soup.findAll('p', {'class': 'fallback-text'})
 
-soup2 = BeautifulSoup(html,'lxml')
-lines = soup.findAll('div', attrs = {'class': 'rowContainer rowContainer_title_card'},limit=None)
+soup2 = BeautifulSoup(html, 'lxml')
+lines = soup.findAll('div', attrs={'class': 'rowContainer rowContainer_title_card'}, limit=None)
 # data = [[x.text for x in y.findAll('p', {'class': 'fallback-text'},limit=None)] for y in lines]
-data = [x.text for x in soup.findAll('p', {'class': 'fallback-text'},limit=None)]
-vign = [y['src'].split("/")[-1] for y in soup.findAll('img', {'class': 'boxart-image-in-padded-container'},limit=None)]
-dfn = pd.DataFrame(data, columns = ['Titre'])
+data = [x.text for x in soup.findAll('p', {'class': 'fallback-text'}, limit=None)]
+vign = [y['src'].split("/")[-1] for y in soup.findAll('img', {'class': 'boxart-image-in-padded-container'}, limit=None)]
+dfn = pd.DataFrame(data, columns=['Titre'])
 dfn['Vignette'] = pd.DataFrame(vign)
 
 # dfs = df.sort_values(by='Titre')
@@ -53,17 +53,18 @@ dfn['Vignette'] = pd.DataFrame(vign)
 # print(dfi)
 # print(dfn)
 
-dfd = dfi.merge(dfn, on='Titre', how = 'outer' ,indicator=True).loc[lambda x : x['_merge']=='right_only']
-dfr = dfd.drop(columns=['Unnamed: 0', 'Vignette_x', 'Type', 'Origine', 'Sortie', 'Saison', 'Episodes', 'Note', 'FinVisionnage','Deadline', 'F-Commentaire', '_merge'])
-dfr["Type"]="Série"
-dfr["Origine"]="Corée du Sud"
-dfr["Sortie"]="2022"
-dfr["Saison"]="1"
-dfr["Episodes"]="16"
-dfr["Note"]="à voir..."
-dfr["FinVisionnage"]=""
-dfr["Deadline"]=""
-dfr["F-Commentaire"]="!CONTROL INFOS!"
+dfd = dfi.merge(dfn, on='Titre', how='outer', indicator=True).loc[lambda x: x['_merge'] == 'right_only']
+dfr = dfd.drop(columns=['Unnamed: 0', 'Vignette_x', 'Type', 'Origine', 'Sortie', 'Saison',
+               'Episodes', 'Note', 'FinVisionnage', 'Deadline', 'F-Commentaire', '_merge'])
+dfr["Type"] = "Série"
+dfr["Origine"] = "Corée du Sud"
+dfr["Sortie"] = "2022"
+dfr["Saison"] = "1"
+dfr["Episodes"] = "16"
+dfr["Note"] = "à voir..."
+dfr["FinVisionnage"] = ""
+dfr["Deadline"] = ""
+dfr["F-Commentaire"] = "!CONTROL INFOS!"
 # print(dfr)
 # print("# nouveauté: ", len(dfr.index))
 # dfr = df.compare(dfi)
@@ -72,7 +73,7 @@ dfr["F-Commentaire"]="!CONTROL INFOS!"
 # Copie des nouvelles vignettes
 try:
     for image in dfr['Vignette_y']:
-        nvFichier=shutil.copy('Netflix_files/'+image, 'docs/images/nx/'+image)
+        nvFichier = shutil.copy('Netflix_files/'+image, 'docs/images/nx/'+image)
     logger.info("Copie de {} Vignettes".format(len(dfr.index)))
 except:
     logger.error("Erreur dans la copie des Vignettes")
@@ -83,11 +84,18 @@ except:
 #     print("Titre: ",row["Titre"])
 #     print("Vignette: ",row["Vignette_y"])
 
-# Writing the data into the excel sheet
-writer_obj = pd.ExcelWriter('deltaNetflix.xlsx',
-                            engine='xlsxwriter')
-dfr.to_excel(writer_obj, sheet_name='delta')
-writer_obj.save()
+
+# OLD VERSION
+# # Writing the data into the excel sheet
+# writer_obj = pd.ExcelWriter('deltaNetflix.xlsx',
+#                             engine='xlsxwriter')
+# dfr.to_excel(writer_obj, sheet_name='delta')
+# writer_obj.save()
+
+# NEW VERSION
+with pd.ExcelWriter('deltaNetflix.xlsx') as writer:
+    dfr.to_excel(writer, sheet_name='delta')
+
 
 # print(bcolors.HEADER + 'Regarder le fichier deltaNetflix.xlsx.'+bcolors.ENDC)
 # print(colored('Regarder le fichier deltaNetflix.xlsx.','green', attrs=['reverse', 'blink']))
