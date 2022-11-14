@@ -25,10 +25,10 @@ Affiche|Information
 Affiche|Information
 :---:|:---
 ![Affiche de Missing: The Other Side](images/nx/AAAABfbyaRIlKTE1P1mviIgTt4FGVR4VZwRLpux78jQ_nISiKeR_DlAyCuTrZpJp0QzAaanyKtML8s41ptZkPzJDA-TtT4TUGKoPrys.webp)<br/>|Série : **Missing: The Other Side / 미씽: 그들이 있었다**<br/>Origine: **Corée du Sud**<br/>Sortie en **2020**<br/>Nb. épisodes: **12**<br/><br/>_Les personnes disparues sans laisser de trace est le sujet de cette série, avec un côté "fantôme"._
-![Affiche de La Servante Écarlate](images/nx/nan)<br/>|Série : **The Handmaid's Tale / La Servante Écarlate**<br/>Origine: **Etats-Unis**<br/>Sortie en **2021**<br/>Nb. épisodes: **55**<br/><br/>_Très sombre et peut être prémonitoire !_
-![Affiche de Star Trek - Picard](images/nx/nan)<br/>|Série : **Star Trek - Picard**<br/>Origine: **Etats-Unis**<br/>Sortie en **2022**<br/>Nb. épisodes: **20**<br/><br/>_Part un peu dans tous les sens ..._
-![Affiche de Fleabag](images/nx/nan)<br/>|Série : **Fleabag**<br/>Origine: **Royaume-Uni**<br/>Sortie en **2016**<br/>Nb. épisodes: **12**<br/><br/>_Commence bien..._
-![Affiche de Journal Intime d'une Call Girl](images/nx/nan)<br/>|Série : **Journal Intime d'une Call Girl**<br/>Origine: **Royaume-Uni**<br/>Sortie en **2007**<br/>Nb. épisodes: **24**<br/><br/>_Part un peu dans tous les sens ..._
+![Affiche de La Servante Écarlate](images/nx/the-handmaid-s-tale341x192.png)<br/>|Série : **The Handmaid's Tale / La Servante Écarlate**<br/>Origine: **Etats-Unis**<br/>Sortie en **2021**<br/>Nb. épisodes: **55**<br/><br/>_Très sombre et peut être prémonitoire !_
+![Affiche de Star Trek - Picard](images/nx/star-trek-picard-341x192.png)<br/>|Série : **Star Trek - Picard**<br/>Origine: **Etats-Unis**<br/>Sortie en **2022**<br/>Nb. épisodes: **20**<br/><br/>_Part un peu dans tous les sens ..._
+![Affiche de Fleabag](images/nx/fleabag_341x192.png)<br/>|Série : **Fleabag**<br/>Origine: **Royaume-Uni**<br/>Sortie en **2016**<br/>Nb. épisodes: **12**<br/><br/>_Commence bien..._
+![Affiche de Journal Intime d'une Call Girl](images/nx/journal_intime_d_une_call_girl_341x192.png)<br/>|Série : **Secret Diary of a Call Girl / Journal Intime d'une Call Girl**<br/>Origine: **Royaume-Uni**<br/>Sortie en **2007**<br/>Nb. épisodes: **24**<br/><br/>_Part un peu dans tous les sens ..._
 
 
 
