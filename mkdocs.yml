@@ -5,7 +5,7 @@ site_author: "Gilles LANTERI"
 site_url: "https://gilfr.github.io/docs/"
 
 # Copyright
-# copyright: "Copyright &copy; 2020-2022 Gilles Lantéri"
+copyright: "Copyright &copy; 2020-2023 Gilles Lantéri"
 
 # Configuration
 theme:
@@ -16,13 +16,13 @@ theme:
       accent: purple
       toggle:
         icon: material/weather-night
-        name: Switch to dark mode
+        name: Mode sombre
     - scheme: slate
       accent: green
       toggle:
         icon: material/weather-sunny
-        name: Switch to light mode
-  # favicon: "images/favicon/logo.svg"
+        name: Mode clair
+  favicon: "images/favicon/movie-open-check.svg"
   icon:
     logo: material/movie-open-check
   features:
