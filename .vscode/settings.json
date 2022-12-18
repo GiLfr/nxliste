@@ -1,6 +1,12 @@
 {
     "python.pythonPath": "f:\\Git\\nxliste\\.venv\\Scripts\\python.exe",
+    "yaml.schemas": {
+        "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+    },
     "yaml.customTags": [
+        "tag:yaml.org,2002:python/name:materialx.emoji.to_svg",
+        "tag:yaml.org,2002:python/name:materialx.emoji.twemoji",
+        "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
         "!And",
         "!And sequence",
         "!If",
@@ -28,5 +34,8 @@
         "!Select sequence",
         "!Split",
         "!Split sequence"
+    ],
+    "aws.lambda.recentlyUploaded": [
+
     ]
 }
