@@ -7,9 +7,8 @@ py nxupd_xlsx2gs.py
 if [ -f "Netflix.html" ];
 then
     rm Netflix.html
-    if [ -d "Netflix_files" ];
-    then
-        rm -r Netflix_files
-    fi
-
+fi
+if [ -d "Netflix_files" ];
+then
+    rm -r Netflix_files
 fi
