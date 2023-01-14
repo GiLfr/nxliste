@@ -11,18 +11,16 @@ import xlsxwriter
 def bloc_vign(enreg):
     # Affichage de la vignette
     vign = '![Affiche de '+str(enreg['Titre'])+'](images/nx/'+str(enreg['Vignette'])+')<br/>'
-    # Retrait de la série/du film
-    retrait = ''
+    # Affectaton icone de retrait
+    retrait = ':material-television:'
+    if enreg['Plateform'] == 'Netflix':
+        retrait = ':material-netflix:{ .rouge }'
+    elif enreg['Plateform'] == 'Amazon Prime':
+        retrait = 'Amazon Prime'
+    elif enreg['Plateform'] == 'Viki':
+        retrait = ':fontawesome-brands-korvue:'
     if re.findall(r"[\d]{1,2}/[\d]{1,2}/[\d]{4}", str(enreg['Deadline'])):
         date_retrait = pd.to_datetime(enreg['Deadline'], format="%d/%m/%Y")
-        # Affectaton icone de retrait
-        retrait = ':material-television:'
-        if enreg['Plateform'] == 'Netflix':
-            retrait = ':material-netflix:{ .rouge }'
-        elif enreg['Plateform'] == 'Amazon Prime':
-            retrait = ':material-amazon:{ .turquoise }'
-        elif enreg['Plateform'] == 'Viki':
-            retrait = ':fontawesome-brands-korvue:'
         # Test de la deadline
         if date_retrait > datetime.datetime.now():
             retrait += '<span style="color:darkred" class="blink">'
@@ -32,8 +30,7 @@ def bloc_vign(enreg):
             retrait += '<span style="color:darkorange">'
             retrait += 'Retiré de ' + enreg['Plateform'] + ' le ' + str(enreg['Deadline'])
             retrait += '</span>'
-    if retrait != '':
-        vign += retrait
+    vign += retrait
     return vign + '|'
 
 
