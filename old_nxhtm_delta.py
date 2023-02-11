@@ -1,30 +1,25 @@
-# %%
 # import re
 import colorama
 import coloredlogs
 import logging
 # import numpy as np
 import pandas as pd
-import pathlib
 import shutil
 import xlsxwriter
 from bs4 import BeautifulSoup
 from termcolor import colored
-# from pathlib import Path
+from pathlib import Path
 import os
 import datetime
 
-# %%
 current_time = datetime.datetime.now()
 timestamp_wp = current_time.timestamp()
 timestamp = str(timestamp_wp).replace(".", "_")
-annee_courante = current_time.strftime('%Y')
 
 colorama.init()
 logger = logging.getLogger(__name__)
 coloredlogs.install(level='DEBUG')
 
-# %%
 # logger.debug("this is a debugging message")
 # logger.info("this is an informational message")
 # logger.warning("this is a warning message")
@@ -42,25 +37,13 @@ coloredlogs.install(level='DEBUG')
 #     BOLD = '\033[1m'
 #     UNDERLINE = '\033[4m'
 
-# %%
-nxfile = pathlib.Path("Netflix.html")
-if not nxfile.exists():
-    logger.info("Pas de fichier Netflix.html à traiter !")
-    # raise TypeError("Pas de fichier Netflix.html à traiter !")  # Provoque une erreur
-    # raise SystemExit()                                          # Provoque une erreur
-    quit(0)
-
-# %%
 # html = open('maListeNetflix.html','r')
 # html = open('test.html','r')
 
 dfi = pd.read_excel('maListeNetflix.xlsx', index_col=None, sheet_name='Liste', usecols='A:L')
 # dfi = pd.read_excel('maListeNetflix.xlsx', index_col=None, sheet_name='Liste', usecols = "B,C")
 
-# %%
 html = open('Netflix.html', 'r', encoding="utf8")
-
-# %%
 soup = BeautifulSoup(html, 'html.parser')
 m1 = soup.findAll('p', {'class': 'fallback-text'})
 
@@ -69,7 +52,7 @@ lines = soup.findAll('div', attrs={'class': 'rowContainer rowContainer_title_car
 # data = [[x.text for x in y.findAll('p', {'class': 'fallback-text'},limit=None)] for y in lines]
 data = [x.text for x in soup.findAll('p', {'class': 'fallback-text'}, limit=None)]
 # vign = [y['src'].split("/")[-1] for y in soup.findAll('img', {'class': 'boxart-image-in-padded-container'}, limit=None)]
-vign = [pathlib.Path(y['src']).name for y in soup.findAll('img', {'class': 'boxart-image-in-padded-container'}, limit=None)]
+vign = [Path(y['src']).stem for y in soup.findAll('img', {'class': 'boxart-image-in-padded-container'}, limit=None)]
 
 dfn = pd.DataFrame(data, columns=['Titre'])
 dfn['Vignette'] = pd.DataFrame(vign)
@@ -79,13 +62,12 @@ dfn['Vignette'] = pd.DataFrame(vign)
 # print(dfi)
 # print(dfn)
 
-# %%
 dfd = dfi.merge(dfn, on='Titre', how='outer', indicator=True).loc[lambda x: x['_merge'] == 'right_only']
 dfr = dfd.drop(columns=['Unnamed: 0', 'Vignette_x', 'Type', 'Origine', 'Sortie', 'Saison',
-                        'Episodes', 'Note', 'FinVisionnage', 'Deadline', 'F-Commentaire', '_merge'])
+            'Episodes', 'Note', 'FinVisionnage', 'Deadline', 'F-Commentaire', '_merge'])
 dfr["Type"] = "Série"
 dfr["Origine"] = "Corée du Sud"
-dfr["Sortie"] = annee_courante
+dfr["Sortie"] = "2022"
 dfr["Saison"] = "1"
 dfr["Episodes"] = "16"
 dfr["Note"] = "à voir..."
@@ -97,14 +79,13 @@ dfr["F-Commentaire"] = "!CONTROL INFOS!"
 # dfr = df.compare(dfi)
 # dfr = pd.merge(df, dfi, how="inner", on=["Titre", "Vignette"])
 
-# %%
 # Copie des nouvelles vignettes
 newname_vignette = []
 try:
     for image in dfr['Vignette_y']:
-        path = pathlib.Path(image)
+        path = Path(image)
         img_name = os.path.splitext(path.stem)[0]
-        img_ext = path.suffix
+        img_ext  = path.suffix
         newname = img_name[:30] + "_" + timestamp + img_ext
         nvFichier = shutil.copy('Netflix_files/'+image, 'docs/images/nx/'+newname)
         newname_vignette.append(newname)
@@ -114,16 +95,14 @@ except FileExistsError:
 except:
     logger.error("Erreur inconnue dans la copie des Vignettes")
 
-# %%
-# dfr['Vignette_y'] = pd.DataFrame(newname_vignette)
-dfr['Vignette_y'] = newname_vignette
+dfr['Vignette_y'] = pd.DataFrame(newname_vignette)
 
 # Boucle sur les nouveautés (à ajouter dans la liste)
 # for index, row in dfd.iterrows():
 #     print("Titre: ",row["Titre"])
 #     print("Vignette: ",row["Vignette_y"])
 
-# %%
+
 # OLD VERSION
 # # Writing the data into the excel sheet
 # writer_obj = pd.ExcelWriter('deltaNetflix.xlsx',
@@ -131,10 +110,6 @@ dfr['Vignette_y'] = newname_vignette
 # dfr.to_excel(writer_obj, sheet_name='delta')
 # writer_obj.save()
 
-# %%
-dfr.fillna(value='', inplace=True)
-
-# %%
 # NEW VERSION
 with pd.ExcelWriter('deltaNetflix.xlsx') as writer:
     dfr.to_excel(writer, sheet_name='delta')
@@ -144,5 +119,3 @@ with pd.ExcelWriter('deltaNetflix.xlsx') as writer:
 # print(colored('Regarder le fichier deltaNetflix.xlsx.','green', attrs=['reverse', 'blink']))
 logger.info("Stocker dans le fichier deltaNetflix.xlsx")
 print('\x1b[6;30;42m' + 'Success!' + '\x1b[0m')
-
-
