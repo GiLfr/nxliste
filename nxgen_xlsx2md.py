@@ -20,11 +20,15 @@ def bloc_vign(enreg):
     # Affectaton icone de retrait
     retrait = ":material-television:"
     if enreg["Plateform"] == "Netflix":
-        retrait = ":material-netflix:{ .rouge }"
+        retrait = (
+            "<div style='width: 100px'>![Netflix](images/netflix_2015_logo.svg)</div>"
+        )
     elif enreg["Plateform"] == "Amazon Prime":
-        retrait = "Amazon Prime"
+        retrait = "<div style='width: 100px'>![Prime Video](images/prime_video_logo.svg)</div>"
     elif enreg["Plateform"] == "Viki":
-        retrait = ":fontawesome-brands-korvue:"
+        retrait = (
+            "<div style='width: 100px'>![Viki](images/rakuten_viki_logo_2019.svg)</div>"
+        )
     if re.findall(r"[\d]{1,2}/[\d]{1,2}/[\d]{4}", str(enreg["Deadline"])):
         date_retrait = pd.to_datetime(enreg["Deadline"], format="%d/%m/%Y")
         # Test de la deadline
