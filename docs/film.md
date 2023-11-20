@@ -3,6 +3,13 @@ title: Films
 # Les Films
 _(par pays et par ordre alphabétique)_
 
+## Allemagne
+
+Affiche|Information
+:---:|:---
+![Affiche de L'oracle](images/nx/nan)<br/><div style='width: 100px'>![Prime Video](images/prime_video_logo.svg)</div>|Film : **Der Medicus / L'oracle**<br/>Origine: **Allemagne**<br/>Note: :material-star:{.gold .heart}:material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2014**<br/><br/>_La médecine au Moyen-Âge, des vérités historiques assez légères pour un ensemble des plus classiques._
+
+
 ## Australie
 
 Affiche|Information
@@ -71,6 +78,7 @@ Affiche|Information
 ![Affiche de The Gray Man](images/nx/AAAABUCQMBJsoepPC8qghvtFOiRTG6OrjnBsyIF1RmM9Evpg-bdLI5Ef5k0qq0l1I-1gyMUROkv2aokJ61d8YjMCGW9qR_miS316DZ-sQfvGUoLdfxDPUSx-pywQBrIXR6ysvFTm.jpg)<br/><div style='width: 100px'>![Netflix](images/netflix_2015_logo.svg)</div>|Film : **The Gray Man**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.gold .heart}:material-star-half-full:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2022**<br/><br/>_Chasse à l'homme des plus classiques sur fond d'espionnage de la CIA. Malheureusement la crédibilité des actions est quasiment nul._
 ![Affiche de The Old Guard](images/nx/AAAABWqUDMFurML3NEnXWdrtDCa5Fx9I5GdAMJpVhCLg3m5zi5H5n4wbUKv_C8v3wJFotLUJARQDqa7GN4ueuiVfkVamcBPRqMrqyz88I3iRn74SUtdbjPvdLlBDY1EDQN3wKDsG.jpg)<br/><div style='width: 100px'>![Netflix](images/netflix_2015_logo.svg)</div>|Film : **The Old Guard**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.gold .heart}:material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2020**<br/><br/>_Une idée originale, mais un scénario à l'américaine toujours aussi pauvre._
 ![Affiche de Wonder Woman](images/nx/AAAABY_B1nw4jzrwT9uClGRwioWkdJ1xvNIoJ5v-uC92TjHyWL-nAkPpGNGR9SCDF7aJj8l258QfwGYyp1zDnRrnr-Wm91w.webp)<br/><div style='width: 100px'>![Netflix](images/netflix_2015_logo.svg)</div><span style="color:darkorange">Retiré de Netflix le 18/03/2022</span>|Film : **Wonder Woman**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.gold .heart}:material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2018**<br/><br/>_Plutôt bien fait, mais un peu trop dans l'américanade de base, malgré certains efforts sur le contexte mythique qui reste mal développé._
+![Affiche de Wonder Woman 1984](images/nx/AAAABUG1Brr6oZR20ZkHv4EFBpL9JG_1696163129_45532.webp)<br/><div style='width: 100px'>![Netflix](images/netflix_2015_logo.svg)</div>|Film : **Wonder Woman 1984**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2020**<br/><br/>_Uniquement basé sur les effets spéciaux._
 ![Affiche de Wu Assassins](images/nx/AAAABeZswhZEWZWDbRKWARtgusv5MiAgVUYOrJuCBgOExdkLFpgjgdEnJYcn.jpg)<br/><div style='width: 100px'>![Netflix](images/netflix_2015_logo.svg)</div>|Film : **Wu Assassins**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.gold .heart}:material-star-half-full:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **2019**<br/><br/>_Le scénario part un peu dans tous les sens, les flashback sont mal venus, l'ensemble est assez confus. Seuls les combats sont bien fait._
 ![Affiche de Échec et mort](images/nx/AAAABeR2pCcUAKk1H6jiHNdib46GQcB8dxAPnoyB7hSFvUMF-N3ABYiUxkfBHLxpWdtQWednzyGmF5oMp2MdOjKakAl7MLhcf9aaVfd4Ut_KDcrqyBpJoY8c0LSuPeMh21eHj4oCzNoveOB3Zspz8Z35jt5NMrc.webp)<br/><div style='width: 100px'>![Netflix](images/netflix_2015_logo.svg)</div>|Film : **Hard to kill / Échec et mort**<br/>Origine: **Etats-Unis**<br/>Note: :material-star:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }<br/>Sortie en **1990**<br/><br/>_Série B classique américaine._
 
