@@ -1,16 +1,41 @@
-import colorama
-import coloredlogs
+"""
+     Génération du code markdown
+
+    Génération du code markdown d'affichage à partir du contenu du Google Spreadshhet de référence.
+
+"""
+
 import datetime
 import logging
-import numpy as np
-import pandas as pd
 import re
-import xlsxwriter
 
+import colorama
+import coloredlogs
+import pandas as pd
 
 def bloc_vign(enreg):
-    # Affichage de la vignette
-    vign = (
+    """Affichage de la vignette
+
+    Args:
+        enreg: ligne de la liste des entrées à traiter
+
+    Returns:
+        Bloc à afficher
+    """
+    vign = ""
+    # Numéro de classement
+    topicone = ""
+    if not (pd.isna(enreg["TOP10"])):
+        topicone = ":material-numeric-" + str(int(enreg["TOP10"])) + "-circle:"
+        if int(enreg["TOP10"]) == 1:
+            topicone += "{.num_gold}"
+        elif int(enreg["TOP10"]) == 2:
+            topicone += "{.num_silver}"
+        elif int(enreg["TOP10"]) == 3:
+            topicone += "{.num_copper}"
+    if topicone != "":
+        vign += topicone + "<br/>"
+    vign += (
         "![Affiche de "
         + str(enreg["Titre"])
         + "](images/nx/"
@@ -48,21 +73,22 @@ def bloc_vign(enreg):
             )
             retrait += "</span>"
     vign += retrait
+    if enreg["Note"] in dicoNotes:
+        vign += dicoNotes[str(enreg["Note"])]
+
     return vign + "|"
 
 
 def bloc_info(enreg):
-    # Palmarès si classé
-    topicone = ""
-    if not (pd.isna(enreg["TOP10"])):
-        topicone = ":material-numeric-" + str(int(enreg["TOP10"])) + "-circle:"
-        if int(enreg["TOP10"]) == 1:
-            topicone += "{.num_gold}"
-        elif int(enreg["TOP10"]) == 2:
-            topicone += "{.num_silver}"
-        elif int(enreg["TOP10"]) == 3:
-            topicone += "{.num_copper}"
-    # Le titre
+    """Affichage des informations
+
+    Args:
+        enreg: ligne de la liste des entrées à traiter
+
+    Returns:
+        Bloc à afficher
+    """
+
     titrex2 = str(enreg["F-Titre"])
     if str(enreg["F-Titre"]) != str(enreg["Titre"]):
         titrex2 += " / " + str(enreg["Titre"])
@@ -73,19 +99,13 @@ def bloc_info(enreg):
     if str(enreg["CoreenCC"]) == "Oui":
         soustitre = ":kr: sous-titres en coréens"
     # Le bloc d'info
-    if topicone == "":
-        info = ""
-    else:
-        info = "Palmarès: " + topicone + "<br/>"
-    info += str(enreg["Type"]) + " : **" + str(titrex2) + "**<br/>"
+    info = str(enreg["Type"]) + " : **" + str(titrex2) + "**<br/>"
     info += "Origine: **" + str(enreg["Origine"]) + "**<br/>"
-    if enreg["Note"] in dicoNotes:
-        info += "Note: " + dicoNotes[str(enreg["Note"])] + "<br/>"
-    if enreg["Type"] == "Film":
+    if enreg["Type"] == "Film" or (enreg["Type"] == "Série" and int(enreg['Saison']) == 1 ):
         info += "Sortie en **" + str(int(enreg["Sortie"])) + "**<br/>"
     else:
         info += (
-            "Sortie de la dernière saison en **" + str(int(enreg["Sortie"])) + "**<br/>"
+            "Sortie de la " + str(enreg['Saison']) + "° et dernière saison en **" + str(int(enreg["Sortie"])) + "**<br/>"
         )
     if enreg["Type"] != "Film":
         info += "Nb. épisodes: **" + str(int(enreg["Episodes"])) + "**<br/>"
