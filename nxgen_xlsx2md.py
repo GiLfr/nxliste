@@ -71,7 +71,7 @@ def bloc_vign(enreg):
             retrait += (
                 "Retiré de " + enreg["Plateform"] + " le " + str(enreg["Deadline"])
             )
-            retrait += "</span>"
+            retrait += "</span><br/>"
     vign += retrait
     if enreg["Note"] in dicoNotes:
         vign += dicoNotes[str(enreg["Note"])]
@@ -101,11 +101,11 @@ def bloc_info(enreg):
     # Le bloc d'info
     info = str(enreg["Type"]) + " : **" + str(titrex2) + "**<br/>"
     info += "Origine: **" + str(enreg["Origine"]) + "**<br/>"
-    if enreg["Type"] == "Film" or (enreg["Type"] == "Série" and int(enreg['Saison']) == 1 ):
+    if int(enreg['Saison']) == 1 :
         info += "Sortie en **" + str(int(enreg["Sortie"])) + "**<br/>"
     else:
         info += (
-            "Sortie de la " + str(enreg['Saison']) + "° et dernière saison en **" + str(int(enreg["Sortie"])) + "**<br/>"
+            "Sortie de la " + str(enreg['Saison']) + "° saison en **" + str(int(enreg["Sortie"])) + "**<br/>"
         )
     if enreg["Type"] != "Film":
         info += "Nb. épisodes: **" + str(int(enreg["Episodes"])) + "**<br/>"
