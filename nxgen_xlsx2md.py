@@ -1,5 +1,5 @@
 """
-     Génération du code markdown
+    Génération du code markdown
 
     Génération du code markdown d'affichage à partir du contenu du Google Spreadshhet de référence.
 
@@ -12,6 +12,7 @@ import re
 import colorama
 import coloredlogs
 import pandas as pd
+
 
 def bloc_vign(enreg):
     """Affichage de la vignette
@@ -101,11 +102,15 @@ def bloc_info(enreg):
     # Le bloc d'info
     info = str(enreg["Type"]) + " : **" + str(titrex2) + "**<br/>"
     info += "Origine: **" + str(enreg["Origine"]) + "**<br/>"
-    if int(enreg['Saison']) == 1 :
+    if int(enreg["Saison"]) == 1:
         info += "Sortie en **" + str(int(enreg["Sortie"])) + "**<br/>"
     else:
         info += (
-            "Sortie de la " + str(enreg['Saison']) + "° saison en **" + str(int(enreg["Sortie"])) + "**<br/>"
+            "Sortie de la "
+            + str(enreg["Saison"])
+            + "° saison en **"
+            + str(int(enreg["Sortie"]))
+            + "**<br/>"
         )
     if enreg["Type"] != "Film":
         info += "Nb. épisodes: **" + str(int(enreg["Episodes"])) + "**<br/>"
