@@ -27,6 +27,7 @@ Affiche|Information
 ![Affiche de Bon Garçon ](images/nx/bon_garcon_341x192.png)<br/><div style='width: 100px'>![Prime Video](images/prime_video_logo.svg)</div>|Série : **Good Boy / Bon Garçon  / 굿보이**<br/>Origine: **Corée du Sud**<br/>Sortie en **2016**<br/>Nb. épisodes: **16**<br/>:kr: sous-titres en coréens<br/><br/>_Recyclage d'anciens champions sportifs, dans la police._
 ![Affiche de Somebody](images/nx/AAAABXf8ER-IcP-aamUzvul79CrMAlllkr2jCsO7ceMJuPMCTbckmu-O_u5acWInJWgJFqTmNA3zwqHG5HA1tI30CK9So5t2p6vQau04FVJrG_aMh-AP3hwSqqtu91XhXhoAaQdu.jpg)<br/><div style='width: 100px'>![Netflix](images/netflix_2015_logo.svg)</div>|Série : **Somebody / 썸바디**<br/>Origine: **Corée du Sud**<br/>Sortie en **2022**<br/>Nb. épisodes: **8**<br/>:kr: sous-titres en coréens<br/><br/>_nan_
 ![Affiche de Le Cid](images/nx/el_cid_341x192.png)<br/><div style='width: 100px'>![Prime Video](images/prime_video_logo.svg)</div>|Série : **El Cid / Le Cid**<br/>Origine: **Espagne**<br/>Sortie de la 2° saison en **2021**<br/>Nb. épisodes: **10**<br/><br/>_L'histoire du parcours du Cid dans le nord de l'Espagne Franque, avec une reconstitution historique de qualité._
+![Affiche de Elementary](images/nx/elementary_341x192.png)<br/><div style='width: 100px'>![Prime Video](images/prime_video_logo.svg)</div>|Série : **Elementary**<br/>Origine: **Etats-Unis**<br/>Sortie de la 7° saison en **2019**<br/>Nb. épisodes: **154**<br/><br/>_Enquête policière à New York du plus bristish des détective._
 
 
 
