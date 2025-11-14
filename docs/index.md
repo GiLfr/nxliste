@@ -30,7 +30,7 @@ Affiche|Information
 ![Affiche de Goodbye Earth](images/nx/AAAABW3CkxQECGzQ2WJWOSp3rE731a_1714149364_528366.jpg)<br/><div style='width: 100px'>![Netflix](images/netflix_2015_logo.svg)</div>|Série : **Goodbye Earth / 종말의 바보**<br/>Origine: **Corée du Sud**<br/>Sortie en **2024**<br/>Nb. épisodes: **12**<br/>:kr: sous-titres en coréen<br/><br/>_Un astéroïde va percuter la terre, tout part en vrille._
 ![Affiche de Mon amour au paradis](images/nx/AAAABU3q4QKKD0YoYf3eNy7Dpjur6o_1746954993_296761.jpg)<br/><div style='width: 100px'>![Netflix](images/netflix_2015_logo.svg)</div>|Série : **Mon amour au paradis / 천국보다 아름다운**<br/>Origine: **Corée du Sud**<br/>Sortie en **2025**<br/>Nb. épisodes: **12**<br/>:kr: sous-titres en coréen<br/><br/>_On fait quoi au paradis, vaste programme._
 ![Affiche de The Asset](images/nx/AAAABRl5n1ohNa224-K9-qT6jGDj_q_1763129590_127764.jpg)<br/><div style='width: 100px'>![Netflix](images/netflix_2015_logo.svg)</div>|Série : **Legenden / The Asset**<br/>Origine: **Danemark**<br/>Sortie en **2025**<br/>Nb. épisodes: **6**<br/><br/>_Infiltration d'une légende._
-![Affiche de Wolf Hall](images/nx/Wolf_Hall_431x192.png)<br/>:material-television:|Série : **Dans l’ombre des tudors / Wolf Hall**<br/>Origine: **Royaume-Uni**<br/>Sortie de la 2° saison en **2015**<br/>Nb. épisodes: **12**<br/><br/>_L’ascension de Thomas Cromwell sous le règne d’Henri VIII._
+![Affiche de Wolf Hall](images/nx/Wolf_Hall_431x192.png)<br/><div style='width: 100px'>![Viki](images/arte_logo.svg)</div>|Série : **Dans l’ombre des tudors / Wolf Hall**<br/>Origine: **Royaume-Uni**<br/>Sortie de la 2° saison en **2015**<br/>Nb. épisodes: **12**<br/><br/>_L’ascension de Thomas Cromwell sous le règne d’Henri VIII._
 
 
 

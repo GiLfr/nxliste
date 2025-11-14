@@ -55,6 +55,9 @@ def bloc_vign(enreg):
         retrait = (
             "<div style='width: 100px'>![Viki](images/rakuten_viki_logo_2019.svg)</div>"
         )
+    elif enreg["Plateform"] == "Arte":
+        retrait = "<div style='width: 100px'>![Viki](images/arte_logo.svg)</div>"
+
     if re.findall(r"[\d]{1,2}/[\d]{1,2}/[\d]{4}", str(enreg["Deadline"])):
         date_retrait = pd.to_datetime(enreg["Deadline"], format="%d/%m/%Y")
         # Test de la deadline
