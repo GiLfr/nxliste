@@ -1,7 +1,7 @@
 """
-    Génération du code markdown
+Génération du code markdown
 
-    Génération du code markdown d'affichage à partir du contenu du Google Spreadshhet de référence.
+Génération du code markdown d'affichage à partir du contenu du Google Spreadshhet de référence.
 
 """
 
@@ -98,7 +98,10 @@ def bloc_info(enreg):
     # les sous-titres disponible en KR (:material-subtitles-outline:)
     soustitre = ""
     if str(enreg["CoreenCC"]) == "Oui":
-        soustitre = ":kr: sous-titres en coréens"
+        if str(enreg["Origine"]) == "Corée du Sud":
+            soustitre = ":kr: sous-titres en coréen"
+        elif str(enreg["Origine"]) == "Japon":
+            soustitre = ":jp: sous-titres en japonais"
     # Le bloc d'info
     info = str(enreg["Type"]) + " : **" + str(titrex2) + "**<br/>"
     info += "Origine: **" + str(enreg["Origine"]) + "**<br/>"
@@ -148,13 +151,23 @@ mdLast = "## Derniers vus\n\n" + header
 mdEC = "\n\n## En cours...\n\n" + header
 md10 = "\n\n## Top 10\n\n" + header
 mdS = "title: Séries\n\n# Les Séries\n_(par pays et par ordre alphabétique)_"
+mdSA = "title: Séries Animés\n\n# Les Séries Animés\n_(par pays et par ordre alphabétique)_"
 mdF = "title: Films\n\n# Les Films\n_(par pays et par ordre alphabétique)_"
+mdFA = (
+    "title: Films Animés\n\n# Les Films Animés\n_(par pays et par ordre alphabétique)_"
+)
 mdD = "title: Documentaires\n\n# Les Documentaires\n_(par pays et par ordre alphabétique)_"
 mdE = "title: Emmissions\n\n# Les Emissions\n_(par pays et par ordre alphabétique)_"
+mdT = (
+    "title: Téléréalités\n\n# Les Téléréalités\n_(par pays et par ordre alphabétique)_"
+)
 OrigineS = ""
+OrigineSA = ""
 OrigineF = ""
+OrigineFA = ""
 OrigineD = ""
 OrigineE = ""
+OrigineT = ""
 
 dfx = pd.read_excel(
     "maListeNetflix.xlsx", index_col=None, sheet_name="Liste", usecols="B:R"
@@ -167,7 +180,12 @@ for index, row in df.iterrows():
     if row["Note"] in dicoNotes:
         md = bloc_vign(row)
         md += bloc_info(row)
-        if row["Type"] == "Série":
+        if row["Type"] == "Série Animé":
+            if OrigineSA != row["Origine"]:
+                mdS += "\n\n## " + row["Origine"] + "\n\n" + header
+            mdSA += md
+            OrigineSA = row["Origine"]
+        elif row["Type"] == "Série":
             if OrigineS != row["Origine"]:
                 mdS += "\n\n## " + row["Origine"] + "\n\n" + header
             mdS += md
@@ -177,6 +195,11 @@ for index, row in df.iterrows():
                 mdF += "\n\n## " + row["Origine"] + "\n\n" + header
             mdF += md
             OrigineF = row["Origine"]
+        elif row["Type"] == "Film Animé":
+            if OrigineFA != row["Origine"]:
+                mdFA += "\n\n## " + row["Origine"] + "\n\n" + header
+            mdFA += md
+            OrigineFA = row["Origine"]
         elif row["Type"] == "Documentaire":
             if OrigineD != row["Origine"]:
                 mdD += "\n\n## " + row["Origine"] + "\n\n" + header
@@ -187,6 +210,11 @@ for index, row in df.iterrows():
                 mdE += "\n\n## " + row["Origine"] + "\n\n" + header
             mdE += md
             OrigineE = row["Origine"]
+        elif row["Type"] == "Téléréalité":
+            if OrigineT != row["Origine"]:
+                mdT += "\n\n## " + row["Origine"] + "\n\n" + header
+            mdT += md
+            OrigineT = row["Origine"]
     if row["Note"].lower().strip()[0:8] == "en cours":
         md = bloc_vign(row)
         md += bloc_info(row)
@@ -214,14 +242,23 @@ with open("docs/index.md", "w", encoding="utf-8") as f:
 with open("docs/film.md", "w", encoding="utf-8") as f:
     f.write(mdF)
 
+with open("docs/filmanin.md", "w", encoding="utf-8") as f:
+    f.write(mdFA)
+
 with open("docs/serie.md", "w", encoding="utf-8") as f:
     f.write(mdS)
+
+with open("docs/serieanim.md", "w", encoding="utf-8") as f:
+    f.write(mdSA)
 
 with open("docs/documentaire.md", "w", encoding="utf-8") as f:
     f.write(mdD)
 
-# with open("docs/emission.md", "w", encoding='utf-8') as f:
-#     f.write(mdE)
+with open("docs/emission.md", "w", encoding="utf-8") as f:
+    f.write(mdE)
+
+with open("docs/telerealite.md", "w", encoding="utf-8") as f:
+    f.write(mdT)
 
 logger.info("Fin de la génération")
 print("\x1b[6;30;42m" + "Success!" + "\x1b[0m")
