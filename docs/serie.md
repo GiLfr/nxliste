@@ -665,21 +665,3 @@ Affiche|Information
 :---:|:---
 ![Affiche de The Protector](images/nx/AAAABeIByacShbc5q4AQ2oI4p1jZELVoAYAR1JTi9GjeBxvfGC5bV08aMwER.jpg)<br/><div style='width: 100px'>![Netflix](images/netflix_2015_logo.svg)</div>:material-star:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }:material-star-outline:{.grey }|Série : **The Protector**<br/>Origine: **Turquie**<br/>Sortie de la 4° saison en **2020**<br/>Nb. épisodes: **32**<br/><br/>_"Le protecteur" est le titre de cette série, qui aurait dû s'appeler "donner des supers pouvoirs à un imbécile". Le scénario suit une stratégie équivalente à un éléphant dans un magasin de porcelaine, seuls les effets spéciaux sont pas mal. Abandonner en cours de route !_
 ![Affiche de Yakamoz S-245](images/nx/AAAABUTZ4lrk9jBU2umblXx7_ekA5iUnDZz0hxLfN6D9V--UR5Xt6-RLJTZ74L9SHLG_qL6Zua7Y6gz9gzUUHrvcXt_yREwiCNfmemvgjtgYbrFtS8bsYmmp0iYi8L3W.jpg)<br/><div style='width: 100px'>![Netflix](images/netflix_2015_logo.svg)</div>:material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-half-full:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }|Série : **Yakamoz S-245**<br/>Origine: **Turquie**<br/>Sortie en **2022**<br/>Nb. épisodes: **7**<br/><br/>_Série de science-fiction sur la fin du monde avec un scénario assez classique (série incomplète) ._
-
-
-## Etats-Unis
-
-Affiche|Information
-:---:|:---
-
-
-## France
-
-Affiche|Information
-:---:|:---
-
-
-## Japon
-
-Affiche|Information
-:---:|:---

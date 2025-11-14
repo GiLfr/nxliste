@@ -115,7 +115,7 @@ def bloc_info(enreg):
             + str(int(enreg["Sortie"]))
             + "**<br/>"
         )
-    if enreg["Type"] != "Film":
+    if enreg["Type"][:4] != "Film":
         info += "Nb. épisodes: **" + str(int(enreg["Episodes"])) + "**<br/>"
     if soustitre != "":
         info += soustitre + "<br/>"
@@ -182,7 +182,7 @@ for index, row in df.iterrows():
         md += bloc_info(row)
         if row["Type"] == "Série Animé":
             if OrigineSA != row["Origine"]:
-                mdS += "\n\n## " + row["Origine"] + "\n\n" + header
+                mdSA += "\n\n## " + row["Origine"] + "\n\n" + header
             mdSA += md
             OrigineSA = row["Origine"]
         elif row["Type"] == "Série":
