@@ -239,6 +239,13 @@ Affiche|Information
 ![Affiche de Trouble](images/nx/AAAABTBG3Ox9ycraMvz2Di9QI0Hmag_1729355954_709783.jpg)<br/><div style='width: 100px'>![Netflix](images/netflix_2015_logo.svg)</div>:material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-half-full:{.gold .heart}:material-star-outline:{.grey }:material-star-outline:{.grey }|Film : **Trouble**<br/>Origine: **Suède**<br/>Sortie en **2024**<br/><br/>_Policier un peu loufoque mais avec un scénario cohérent._
 
 
+## Taïwan
+
+Affiche|Information
+:---:|:---
+![Affiche de Tigre et dragon](images/nx/AAAABR6QJqBNAwvWE8G8bQlvpiyOob_1775663263_935734.webp)<br/><div style='width: 100px'>![Netflix](images/netflix_2015_logo.svg)</div>:material-star:{.gold .heart}:material-star:{.gold .heart}:material-star:{.gold .heart}:material-star-half-full:{.gold .heart}:material-star-outline:{.grey }|Film : **Tigre et dragon**<br/>Origine: **Taïwan**<br/>Sortie en **2000**<br/><br/>_Le film qui a lancé le genre, ça a un peu vieilli mais les actrices sont toujours aussi jolies._
+
+
 ## Tchéquie
 
 Affiche|Information
